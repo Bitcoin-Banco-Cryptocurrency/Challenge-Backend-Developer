@@ -19,7 +19,7 @@ The API has a single endpoint, `search`, and only accepts the verb `GET`.
 All parameters must be encoded in the URL, folowing the following schema:
 
 Parameter|Value|Description
-----|----|Description
+----|----|----
 |"Name"| Any String | Show only books which names contain this string.
 |"Sort"| "asc" or "desc"| Orders by price
 |Any Specification| Any String | Show only books which names contain this string.
