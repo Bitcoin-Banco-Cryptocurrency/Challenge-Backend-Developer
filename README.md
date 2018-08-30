@@ -1,8 +1,8 @@
-<!--<p align="center">
+<p align="center">
   <a href="https://www.btc-banco.com">
       <img src="https://s3.amazonaws.com/assinaturas-de-emails/btc.png" alt="Grupo Bitcoin Banco"/>
   </a>
-</p> -->
+</p>
 
 ## Challenge for Developer
 
