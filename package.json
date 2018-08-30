@@ -1,0 +1,27 @@
+{
+  "name": "bitcoin-banco-cryptocurrency",
+  "version": "1.0.0",
+  "description": "This is designed for the test https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Books",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Books.git"
+  },
+  "author": "Thiago Romano <thiagopromano@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Books/issues"
+  },
+  "homepage": "https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Books#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
