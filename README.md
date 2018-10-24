@@ -20,7 +20,7 @@ Some specifications:
 To run this API its necessary:
 
 - Ruby v2.4.1 or higher
-- Bundle installed
+- Bundler installed, if necessary run 'gem install bundler'
 - Run the command 'bundle install', dependency gems only used in tests scripts
 - Run the command 'ruby server.rb' to start the server, the configured port is '8080'
 
