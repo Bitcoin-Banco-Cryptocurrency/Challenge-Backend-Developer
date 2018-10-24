@@ -26,14 +26,14 @@ To run this API its necessary:
 
 2. Commands
 
-"Name" = Any String --- Show books that contain this name.
-"Sort" = "asc" or "desc" --- Order by price.
-Specification = Any String --- Show books that contain this specifications. Any specification is accepted.
+- "Name" = Any String --- Show books that contain this name.
+- "Sort" = "asc" or "desc" --- Order by price.
+- Specification = Any String --- Show books that contain this specifications. Any specification is accepted.
 
 Examples:
 
-https://127,0,0,1:8080/search?Author=J. K. Rowling&Sort=asc
-https://127,0,0,1:8080/search?Illustrator=GrandPré
+- https://127.0.0.1:8080/search?Author=J. K. Rowling&Sort=asc
+- https://127.0.0.1:8080/search?Illustrator=GrandPré
 
 3. Tests
 
