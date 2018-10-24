@@ -6,27 +6,35 @@
 
 ## Challenge for Developer
 
-A customer needs to search in our product catalog (available in this <a href="https://github.com/Bitcoin-Banco-Cryptocurrency/challenge/blob/master/books.json">JSON</a>) and he wants to find products that suit his style of reading.
-Based on this you will need to develop:
+This API was created for Bitcoin Banco Cryptocurrency Challenge by Felipe Lopes Pereira. The language choose was Ruby. Some specifications:
+-API endpoint only accept 'GET'
+-The endpoint is 'search'
+-The configured server port is '8080'
+-This API dont have any frameworks, only two gems to help in the test scripts
 
-- a simple API to search products in the .json available;
-- it should be possible to search for products by their specifications (one or more);
-- it must be possible to order the result by price (asc and desc);
+1. Run
 
-The test should be done in Ruby, Go, Python or Node and we do like if you avoid frameworks. We expect at the end of the test, outside the API running, the following items:
+To run this API its necessary:
 
-- an explanation of what is needed to make your project work;
-- an explanation of how to perform the tests;
+- Ruby v2.4.1 or higher
+- Bundle installed
+- Run the command 'bundle install', dependency gems only used in tests scripts
+- Run the command 'ruby server.rb' to start the server, the configured port is '8080'
 
-Remember that at the time of the evaluation we will look at:
+2. Commands
 
-- Code organization;
-- Object-Oriented Principles;
-- Maintenance;
-- Version control knowledge;
-- Unit Test ( Plus );
-- Design Pattern ( Plus );
+  "Name" = Any String --- Show books that contain this name
+  "Sort" = "asc" or "desc" --- Order by price
+  Specification = Any String --- Show books that contain this specifications. Any specification is accepted.
 
-To send us your code, you must:
+Examples:
+'https://127,0,0,1:8080/search?Author=J. K. Rowling&Sort=asc'
+'https://127,0,0,1:8080/search?Illustrator=GrandPré'
 
-Make a fork of this repository, and send us a pull-request.
+3. Tests
+
+Start the server with command 'ruby server.rb' then run 'ruby test.rb'
+
+The gems used are:
+- 'test-util' is a tests helper
+- 'patron' is a HTTP protocol helper

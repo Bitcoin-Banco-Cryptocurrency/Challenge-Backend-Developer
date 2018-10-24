@@ -7,11 +7,13 @@ module Datasource
     @data_hash = {}
     @params = {}
     print("---Reading Json file \n")
-    file = File.read('books.json')
+    file = File.read('./books.json')
     @data_hash = JSON.parse(file)
 
-    print("Successfully \n")
+    @data_hash
   end
+
+  # Search for book name passed in URL
 
   def self.search_params_name(answer, params)
     return answer if params['Name'].nil?
@@ -21,6 +23,8 @@ module Datasource
     answer
   end
 
+  # Save the order parameter
+
   def self.search_params_sort(params)
     return if params['Sort'].nil?
 
@@ -29,16 +33,21 @@ module Datasource
     sort
   end
 
+  # Search for specifications, use the params passed in URL. Check if exist in
+  # json file then return a response
+
   def self.search_params_specifications(answer, params)
     params.each do |key, value|
-      current_key = key.tr('-', ' ').capitalize
+      current_key = key.capitalize
       next unless answer.first['specifications'].key?(current_key.to_s)
 
-      answer.select! { |book| book['specifications'][current_key].include? value }
+      #convert hash to string and search if have substring value
+      answer = answer.select { |book| book['specifications'][current_key].to_s.include? value }
     end
     answer
   end
 
+  # Main function of search
   def self.search(params)
     answer = @data_hash
     @params = params
