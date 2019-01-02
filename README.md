@@ -6,6 +6,10 @@
 
 ## Challenge for Developer
 
+### Developer Level
+- Mid-level
+- Senior
+
 A customer needs to search in our product catalog (available in this <a href="https://github.com/Bitcoin-Banco-Cryptocurrency/challenge/blob/master/books.json">JSON</a>) and he wants to find products that suit his style of reading.
 Based on this you will need to develop:
 
@@ -16,7 +20,7 @@ Based on this you will need to develop:
 The test should be done in Ruby, Go, Python or Node and we do like if you avoid frameworks. We expect at the end of the test, outside the API running, the following items:
 
 - an explanation of what is needed to make your project work;
-- an explanation of how to perform the tests;
+- an explanation of how to perform the tests
 
 Remember that at the time of the evaluation we will look at:
 
@@ -24,8 +28,8 @@ Remember that at the time of the evaluation we will look at:
 - Object-Oriented Principles;
 - Maintenance;
 - Version control knowledge;
-- Unit Test ( Plus );
-- Design Pattern ( Plus );
+- Unit Test;
+- Design Pattern;
 
 To send us your code, you must:
 
