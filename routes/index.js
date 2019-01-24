@@ -1,32 +1,38 @@
 var express = require('express');
 var router = express.Router();
-//var BooksDao = require('../BooksDao');
 var BooksBo = require('../BooksBo');
+var BooksBoTest = require('../BooksBoTest');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Books' });
-});
-
-/* GET new page. */
-router.get('/new', function(req, res, next) {
-  res.render('new', { title: 'Novo Cadastro' });
-});
-
-/* GET new page. */
-router.post('/new', function(req, res, next) {
-  var nome = req.body.nome;
-  var idade = req.body.idade;
-
-  console.log(nome);
-
-  res.redirect('/?nome=' + nome);
-});
-
-router.get('/list', function(req, res, next) {
+router.post('/', function(req, res) {
   var bo = new BooksBo();
-  var specfications = {genre:"Adventure", author:"Jules"};
+  
+  var specfications = {};
+
+  if(req.body.author)
+    specfications.author = req.body.author;
+  
+  if(req.body.genre)
+    specfications.genre = req.body.genre;
+
+  if(req.body.published)
+    specfications.published = req.body.published;
+  
+  if(req.body.pages)
+    specfications.pages = req.body.pages;
+  
+  if(req.body.illustrator)
+    specfications.illustrator = req.body.illustrator;
+  
   res.render('index', {title:'Books', customers: bo.findBooks("desc", specfications)});
+});
+
+router.get('/', function(req, res) {
+  res.render('index', {title:'Books',customers:[]});
+});
+
+router.get('/test', function(req, res) {
+  var test = new BooksBoTest();
+  res.render('test', {msg:test.findBooksTest()});
 });
 
 module.exports = router;
