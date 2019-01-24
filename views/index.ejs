@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul>
+      <% customers.forEach(function(customer){%>
+        <li><%= customer.name %> <%= customer.price %></li>
+      <%})%>
+    </ul>
+  </body>
+</html>
