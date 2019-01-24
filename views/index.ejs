@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form method="post">
+      Author:<input type="text" name="author">
+      <br>
+      Genre:<input type="text" name="genre">
+      <br>
+      Published:<input type="text" name="published">
+      <br>
+      Pages:<input type="text" name="pages">
+      <br>
+      Illustrator:<input type="text" name="illustrator">
+      
+      <button type="submit">Find</button>
+    </form>
+    
+    <ul>
+      <% customers.forEach(function(customer){%>
+        <li><%= customer.name %> <%= customer.price %></li>
+      <%})%>
+    </ul>
+  </body>
+</html>
