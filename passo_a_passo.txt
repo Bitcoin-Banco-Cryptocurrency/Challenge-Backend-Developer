@@ -1,0 +1,42 @@
+#Passo a passo para criar projeto
+
+Ambiente OSX
+
+1) Instalado NVM (The Node Version Manager)  - Gerencidor de Instalações para Node.
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+
+2) Instalado a versão 8 do Node
+	nvm install 8
+
+3) Criar projeto
+	npm init
+
+4) Instalar 
+	npm install express
+
+5) Utilizado Framework Express Generator
+	npm install -g express-generator
+
+6) Criar projeto
+	express -e --git challenge
+
+7) Download dos módulos
+	cd challenge
+	npm install
+	npm start
+
+
+#Passo a Passo para Executar
+1) Iniciar servidor Node
+	npm start
+
+2) No Browser
+	http://localhost:3000/
+
+
+#Passo a Passo para Teste de Unidade
+1) Iniciar servidor Node
+	npm start
+
+2) No Browser
+	http://localhost:3000/test
