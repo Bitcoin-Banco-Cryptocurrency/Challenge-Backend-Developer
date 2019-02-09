@@ -155,8 +155,6 @@ class Book {
                 return 404;
             }
         } catch (error) {
-            console.log('teste')
-            console.log(error);
             return 500;
         }
     }
