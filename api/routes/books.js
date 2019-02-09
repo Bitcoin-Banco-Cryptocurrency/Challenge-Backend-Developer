@@ -7,8 +7,9 @@ const Book = require('../model/book.js');
  */
 router.get('/', (req, res) => {
     try {
+        const order = req.query.order;
         const bookModel = new Book();
-        const books = bookModel.getAll();
+        const books = bookModel.getAll(order);
         res.status(200).json({ books });
     } catch (error) {
         res.status(500).json({ error });
@@ -18,7 +19,7 @@ router.get('/', (req, res) => {
 /**
  * Recupera um livro específico por ID
  */
-router.get('/:id', (req, res) => {
+router.get('/book/:id', (req, res) => {
     try {
         const bookModel = new Book();
         const book = bookModel.getBookByID(req.params.id);
@@ -34,10 +35,11 @@ router.get('/:id', (req, res) => {
 
 /**
  * Recupera o(s) livro(s) com base nos filtros
- * rota exemplo: http://localhost:3000/books/filtered/book?name=teste&price=teste&publish_date=teste&genres=teste&genres=teste
+ * rota exemplo: http://localhost:3000/books/search?name=Journey to the Center of the Earth&price=10.00&publish_date=November 25, 1864&author=Jules Verne&page_count=183&illustrator=Édouard Riou&genres=Science Fiction&genres=Adventure Fiction
  */
-router.get('/filtered/book', (req, res) => {
+router.get('/search', (req, res) => {
     try {
+        const order = req.query.order;
         const params = {
             name: req.query.name,
             price: req.query.price,
@@ -48,21 +50,78 @@ router.get('/filtered/book', (req, res) => {
             genres: req.query.genres
         }
         const BookModel = new Book();
-        const book = BookModel.getBooksByParams(params);
+        const book = BookModel.getBooksByParams(order, params);
         if(book != null && book.length > 0){
             res.status(200).json({ book });
         }else{
-            res.status(404).json({ message: params });
+            res.status(404).json({ message: 'Book(s) not found.' });
         }
     } catch (error) {
         res.status(500).json({ error });
     }
 });
 
+/**
+ * Insere um novo livro
+ */
 router.post('/', (req, res) => {
-    res.status(200).json({
-        message: "Deu boa"
-    });
+    try {
+        let payload = {
+            id: 0,
+            name: req.body.name,
+            price: parseFloat(req.body.price),
+            specifications: {
+                'Originally published': req.body.publish_date,
+                Author: req.body.author,
+                'Page count': req.body.page_count,
+                Illustrator: req.body.illustrator,
+                Genres: req.body.genres
+            }
+        }
+        const BookModel = new Book();
+        const addedBook = BookModel.addBook(payload);
+        res.status(201).json({ addedBook });
+    } catch (error) {
+        res.status(500).json({ error });
+    }
+});
+
+/**
+ * Edita um livro específico
+ */
+router.put('/:id', (req, res) => {
+    try {
+        const BookModel = new Book();
+        const response = BookModel.updateBook(req.params.id, req.body);
+        if(response === 200){
+            res.status(response).json({ message: 'Updated.'});
+        }else if(response === 404){
+            res.status(response).json({ message: 'Book not found.'});
+        }else{
+            res.status(response).json({ message: 'Error.'});
+        }
+    } catch (error) {
+        res.status(500).json({ error });
+    }
+});
+
+/**
+ * Remove um novo livro específico
+ */
+router.delete('/:id', (req, res) => {
+    try {
+        const BookModel = new Book();
+        const response = BookModel.removeBook(req.params.id);
+        if(response === 200){
+            res.status(response).json({ message: 'Deleted.'});
+        }else if(response === 404){
+            res.status(response).json({ message: 'Book not found.'});
+        }else{
+            res.status(response).json({ message: 'Error.'});
+        }
+    } catch (error) {
+        res.status(500).json({ error });
+    }
 });
 
 module.exports = router;
