@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/CaioCRS/Challenge-Backend-Developer#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

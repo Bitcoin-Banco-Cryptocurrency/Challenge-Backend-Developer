@@ -13,7 +13,7 @@ class Book {
     getBookByID(bookID) {
         try {
             let filteredBooks = books.filter(function (book) {
-                return book.id === bookID;
+                return book.id === parseInt(bookID);
             });
             filteredBooks = filteredBooks.shift();
             return filteredBooks;
@@ -31,14 +31,14 @@ class Book {
                             if (Array.isArray(param)){
                                 for (var i in list[l][field]) {
                                     for (var p in param) {
-                                        if(list[l][i] === param[p]){
+                                        if(list[l][i] == param[p]){
                                             filteredList.push(list[l]);
                                         }
                                     }
                                 }
                             }else{
                                 for (var i in list[l][field]) {
-                                    if(list[l][i] === param){
+                                    if(list[l][i] == param){
                                         filteredList.push(list[l]);
                                     }
                                 }
@@ -46,12 +46,12 @@ class Book {
                         }else{
                             if (Array.isArray(param)){
                                 for (var i in params) {
-                                    if(list[l][field] === params[i]){
+                                    if(list[l][field] == params[i]){
                                         filteredList.push(list[l]);
                                     }
                                 }
                             }else{
-                                if(list[l][field] === param){
+                                if(list[l][field] == param){
                                     filteredList.push(list[l]);
                                 }
                             }
@@ -61,14 +61,14 @@ class Book {
                             if (Array.isArray(param)){
                                 for (var i in list[l][field][subfield]) {
                                     for (var p in param) {
-                                        if(list[l][field][subfield][i] === param[p]){
+                                        if(list[l][field][subfield][i] == param[p]){
                                             filteredList.push(list[l]);
                                         }
                                     }
                                 }
                             }else{
                                 for (var i in list[l][field][subfield]) {
-                                    if(list[l][field][subfield][i] === param){
+                                    if(list[l][field][subfield][i] == param){
                                         filteredList.push(list[l]);
                                     }
                                 }
@@ -76,12 +76,12 @@ class Book {
                         }else{
                             if (Array.isArray(param)){
                                 for (var i in params) {
-                                    if(list[l][field][subfield] === params[i]){
+                                    if(list[l][field][subfield] == params[i]){
                                         filteredList.push(list[l]);
                                     }
                                 }
                             }else{
-                                if(list[l][field][subfield] === param){
+                                if(list[l][field][subfield] == param){
                                     filteredList.push(list[l]);
                                 }
                             }
