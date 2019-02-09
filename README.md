@@ -34,3 +34,15 @@ Remember that at the time of the evaluation we will look at:
 To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
+
+## Candidate 
+
+Steps to execute the project:
+- install git, with git bash
+- after install, create a new folder to clone the project
+- access the new folder through the git bash(terminal/prompt) 'n paste this command: git clone git@github.com:Bitcoin-Banco-Cryptocurrency/Challenge-Backend-Developer.git
+- verify that you have already installed the NodeJS on your computer
+- after install the Node JS, run on git bash this command: "npm start"
+- to sample test, run this on ur browser: "http://localhost:3000/books/book/1"
+- to test other routes, use the POSTMAN
+

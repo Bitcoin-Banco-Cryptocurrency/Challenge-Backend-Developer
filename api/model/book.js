@@ -2,6 +2,9 @@
 const books = require('../../books.json');
 
 class Book {
+    /**
+     * Retorna todos os livros
+     */
     getAll(order) {
         if(order === 'ASC'){
             books.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
@@ -10,6 +13,9 @@ class Book {
         }
         return books;
     }
+    /**
+     * Retorna um livro em específico, filtrado por ID
+     */
     getBookByID(bookID) {
         try {
             let filteredBooks = books.filter(function (book) {
@@ -21,6 +27,10 @@ class Book {
             return null;
         }
     }
+    /**
+     * Retorna um ou mais livros, com base nos filtros
+     * Como alguns campos no JSON podem ser um array, ou um string, foi necessário realizar diversas verificações
+     */
     getBooksByParams(order, params) {
         try {
             function getFilteredList(list, field, subfield, param){
@@ -122,6 +132,9 @@ class Book {
             return null;
         }
     }
+    /**
+     * Adiciona um livro à "base"
+     */
     addBook(payload){
         try {
             const bookCount = books.length;
@@ -138,6 +151,9 @@ class Book {
             return null;
         }
     }
+    /**
+     * Remove um livro em específico
+     */
     removeBook(id){
         try {
             let newBookList = books.filter(function (book) {
@@ -158,6 +174,9 @@ class Book {
             return 500;
         }
     }
+    /**
+     * Altera um livro em específico
+     */
     updateBook(id, payload){
         try {
             let updateBooks = false;
