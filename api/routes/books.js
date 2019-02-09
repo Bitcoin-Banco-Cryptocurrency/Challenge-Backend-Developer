@@ -2,6 +2,14 @@ const express = require('express');
 const router = express.Router();
 const Book = require('../model/book.js');
 
+function validateFields(req, res, next) {
+    if(req.body.name == null || req.body.price == null || req.body.publish_date == null || req.body.author == null || req.body.page_count == null || req.body.illustrator == null || req.body.genres == null){
+        res.status(400).json({ message: "One or more parameters are null!" });
+    }else{
+        next();
+    }
+}
+
 /**
  * Recupera todos os livros
  */
@@ -64,7 +72,7 @@ router.get('/search', (req, res) => {
 /**
  * Insere um novo livro
  */
-router.post('/', (req, res) => {
+router.post('/', validateFields, (req, res) => {
     try {
         let payload = {
             id: 0,
