@@ -4,33 +4,36 @@
   </a>
 </p>
 
-## Challenge for Developer
+## requisitos
+node 8.11.3 ou superior
+testado em windows
 
-### Developer Level
-- Mid-level
-- Senior
+## para rodar o projeto
+execute o comando npm install;
+npm run build;
+npm run start;
 
-A customer needs to search in our product catalog (available in this <a href="https://github.com/Bitcoin-Banco-Cryptocurrency/challenge/blob/master/books.json">JSON</a>) and he wants to find products that suit his style of reading.
-Based on this you will need to develop:
 
-- a simple API to search products in the .json available;
-- it should be possible to search for products by their specifications (one or more);
-- it must be possible to order the result by price (asc and desc);
+## endpoints publicos
+os endpoints acessíveis são:
 
-The test should be done in Ruby, Go, Python or Node and we do like if you avoid frameworks. We expect at the end of the test, outside the API running, the following items:
+http://localhost:{{porta}}/api/searchBySpecification
 
-- an explanation of what is needed to make your project work;
-- an explanation of how to perform the tests
+http://localhost:{{porta}}/api/search
 
-Remember that at the time of the evaluation we will look at:
+Parametros de get para as duas consultas:
+name
+sort
+  valores possíveis: ASC ou DESC
 
-- Code organization;
-- Object-Oriented Principles;
-- Maintenance;
-- Version control knowledge;
-- Unit Test;
-- Design Pattern;
+parametros para consulta por specificação:
+specification:
+  formato: specificação:valor,specificação:valor
+  nome da specificação, dois pontos, valor para busca.
+  para enviar mais valores para busca elesdevem ser separados por virgula.
 
-To send us your code, you must:
+exemplos de requisição:
 
-Make a fork of this repository, and send us a pull-request.
+http://localhost:{{porta}}/api/searchBySpecification?sort=ASC&specification=Illustrator:Édouard%20Riou
+http://localhost:3000/api/searchBySpecification?sort=DESC&specification=Illustrator:%C3%89douard%20Riou,Author:Jules%20Verne
+http://localhost:{{porta}}/api/search?name=Harry&sort=ASC

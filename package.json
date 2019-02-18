@@ -1,0 +1,46 @@
+{
+  "name": "challenge-backend-developer",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <a href=\"https://www.btc-banco.com\">\r       <img src=\"https://s3.amazonaws.com/assinaturas-de-emails/btc.png\" alt=\"Grupo Bitcoin Banco\"/>\r   </a>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "-pretest": "npm run build",
+    "test": " .\\node_modules\\.bin\\nyc .\\node_modules\\.bin\\mocha .\\test --exit",
+    "start": " node dist\\src\\index.js",
+    "start-test": " node index.js",
+    "start-prod": " node index.js",
+    "build": " .\\node_modules\\.bin\\del dist && .\\node_modules\\.bin\\del docs &&  tsc && typedoc --out docs src --mode file"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigocosta168/Challenge-Backend-Developer.git"
+  },
+  "author": "Rodrigo Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigocosta168/Challenge-Backend-Developer/issues"
+  },
+  "homepage": "https://github.com/rodrigocosta168/Challenge-Backend-Developer#readme",
+  "dependencies": {
+    "@types/restify": "^7.2.8",
+    "@types/restify-errors": "^4.3.3",
+    "@types/restify-plugins": "^1.5.12",
+    "del": "^3.0.0",
+    "del-cli": "^1.1.0",
+    "node-env-file": "^0.1.8",
+    "path": "^0.12.7",
+    "restify": "^7.7.0",
+    "restify-errors": "^6.1.1",
+    "restify-plugins": "^1.6.0",
+    "swagger-jsdoc": "^3.2.7",
+    "ts-node": "^8.0.2",
+    "typedoc": "^0.14.2"
+  },
+  "devDependencies": {
+    "chai-spies": "^1.0.0",
+    "hippie": "^0.5.1",
+    "jshint": "^2.10.1",
+    "swagger-ui": "^3.20.8",
+    "typescript": "^3.3.3"
+  }
+}
