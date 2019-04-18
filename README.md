@@ -34,3 +34,64 @@ Remember that at the time of the evaluation we will look at:
 To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
+
+
+# Resposta do Teste
+
+
+Projeto feito em Docker, o projeto conta com REST API:
+- GET:/api/v1/books/ (retorna todos os books);
+- GET:/api/v1/books/:id (retorna único livro com o id)
+- POST:/api/v1/books/ (insere outro livro no json)
+* obs: (tem que mandar no body o json com os dados)
+```
+{
+    "name": "Journey to the Center of the Earth",
+    "price": 3.5,
+    "specifications": {
+        "Originally published": "November 25, 1864",
+        "Author": "Roberto Aoki",
+        "Page count": 183,
+        "Illustrator": "Édouard Riou",
+        "Genres": [
+            "Science Fiction",
+            "Adventure fiction"
+        ]
+    }
+}
+```
+- PUT:/api/v1/books/:id (atualização do book id)
+* obs: (tem que mandar no body o json com os dados)
+```
+{
+    "name": "Journey to the Center of the Earth",
+    "price": 10.5,
+    "specifications": {
+        "Originally published": "November 25, 1864",
+        "Author": "Roberto",
+        "Page count": 183,
+        "Illustrator": "Édouard Riou",
+        "Genres": [
+            "Science Fiction",
+            "Adventure fiction"
+        ]
+    }
+}
+```
+- DELETE:/api/v1/books/:id (deleta o book id)
+
+# para subir o projeto:
+```
+$ docker-compose build
+$ docker-compose up -d
+```
+
+# para acessar o Projeto:
+http://localhost:8080/api/v1/books/
+
+# para executar unitário exigido no teste
+É preciso entrar no container para executar o mocha
+```
+$ docker exec -it challenge-backend-developer_web_1 bash
+$ mocha
+```
