@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/nogueiraaoki/Challenge-Backend-Developer#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "sort-json-array": "^0.1.7"
   },
   "devDependencies": {
     "morgan": "^1.9.1",
