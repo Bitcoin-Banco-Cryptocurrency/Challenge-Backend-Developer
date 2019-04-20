@@ -8,8 +8,10 @@ http.createServer(function(request, response) {
 
             response.writeHead(200, { 'Content-Type': 'application/json' });
             response.end(JSON.stringify(data));
-            
+
         }).catch( err => {
+
+            console.log('err', err)
 
             response.writeHead(err.statusCode || 500, { 'Content-Type': 'application/json' });
             response.end(JSON.stringify(err.message || 'Error'));

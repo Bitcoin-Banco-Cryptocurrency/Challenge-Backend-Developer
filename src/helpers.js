@@ -5,6 +5,21 @@ function to(promise) {
     .catch(err => [err]);
 }
 
+function escape(str) {
+   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function sortPrice(a,b){
+    return a.price - b.price;
+}
+
+function sortDesc(a,b){
+    return a.price - b.price;
+}
+
 module.exports = {
-    to
+    to,
+    escape,
+    sortPrice,
+    sortDesc
 }
