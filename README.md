@@ -6,34 +6,31 @@
 
 ## Challenge for Developer
 
-Search book API
+### Developer Level
+- Mid-level
+- Senior
 
-## Requirements
+A customer needs to search in our product catalog (available in this <a href="https://github.com/Bitcoin-Banco-Cryptocurrency/challenge/blob/master/books.json">JSON</a>) and he wants to find products that suit his style of reading.
+Based on this you will need to develop:
 
-* Node v8 installed.
+- a simple API to search products in the .json available;
+- it should be possible to search for products by their specifications (one or more);
+- it must be possible to order the result by price (asc and desc);
 
-## start application 
-* Run the command `npm install`
-* Run the command `npm start`
-* Server will be running by the enviroment variable `PORT`, or `3000`.
+The test should be done in Ruby, Go, Python or Node and we do like if you avoid frameworks. We expect at the end of the test, outside the API running, the following items:
 
-## Commands
+- an explanation of what is needed to make your project work;
+- an explanation of how to perform the tests
 
-Access the following endpoint to get book `/books`.
+Remember that at the time of the evaluation we will look at:
 
-All parameters must be encoded in the URL
+- Code organization;
+- Object-Oriented Principles;
+- Maintenance;
+- Version control knowledge;
+- Unit Test;
+- Design Pattern;
 
-Parameter|Value|Description
-----|----|----
-|"id"| Any String | Show only books which id contain this string.
-|"sort"| "asc" or "desc"| Orders by price
-|Any Specification| Any String | Show only books which id contain this string.
+To send us your code, you must:
 
-## Exemples
-
-* `http://localhost:3000/books?id=1 to the Center of the Earth` - Searches only books with this id
-* `http://localhost:3000/books?Genres=Fantasy&sort=desc` - Searches only books with the Genres Fantasy and sort by descending price
-
-## Test
-* To make test, start the server with `npm start` and in another window terminal run `npm run test`
-
+Make a fork of this repository, and send us a pull-request.
