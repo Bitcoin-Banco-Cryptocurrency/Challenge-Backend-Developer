@@ -15,7 +15,7 @@ namespace Challenge.API.Controllers
     {
         // GET: api/Book
         [HttpGet]
-        public IEnumerable<Book> Get()
+        public IEnumerable<Book> Get(string Name, string AuthorName, bool PriceDesc)
         {
             return new BookRepository().GetList();
         }
