@@ -12,6 +12,6 @@ namespace Challenge.API.DAL.Repository
         void Filter(List<Expression<Func<Book, bool>>> filters);
         void OrderByPrice(Expression<Func<Book, float>> expression);
         List<Book> GetList();
-        Book GetBookById();
+        Book GetBookById(int id);
     }
 }

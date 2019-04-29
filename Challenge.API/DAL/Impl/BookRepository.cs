@@ -22,7 +22,7 @@ namespace Challenge.API.DAL.Impl
             throw new NotImplementedException();
         }
 
-        public Book GetBookById()
+        public Book GetBookById(int Id)
         {
             throw new NotImplementedException();
         }

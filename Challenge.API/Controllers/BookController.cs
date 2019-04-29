@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Challenge.API.DAL.Impl;
+using Challenge.API.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,16 +15,16 @@ namespace Challenge.API.Controllers
     {
         // GET: api/Book
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Book> Get()
         {
             return new BookRepository().GetList();
         }
 
         // GET: api/Book/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public Book Get(int id)
         {
-            return "value";
+            return new BookRepository().GetBookById(id);
         }
     }
 }
