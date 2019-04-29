@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
-using System.Threading.Tasks;
 using Challenge.API.DAL.Repository;
 using Challenge.API.Model;
 using Newtonsoft.Json;
@@ -23,24 +21,27 @@ namespace Challenge.API.DAL.Impl
             Data = JsonConvert.DeserializeObject<List<Book>>(_filePath);
         }
 
-        public void Filter(List<Expression<Func<Book, bool>>> filters)
+        public void Filter(List<Func<Book, bool>> filters)
         {
-            throw new NotImplementedException();
+            foreach (var item in filters)
+            {
+                Data = Data.Where(item).ToList();
+            }
         }
 
         public Book GetBookById(int Id)
         {
-            throw new NotImplementedException();
+            return Data.SingleOrDefault(b => b.id == Id);
         }
 
         public List<Book> GetList()
         {
-            throw new NotImplementedException();
+            return Data;
         }
 
-        public void OrderByPrice(Expression<Func<Book, float>> expression)
+        public void OrderByPrice()
         {
-            throw new NotImplementedException();
+            Data.OrderBy(b => b.price);
         }
     }
 }

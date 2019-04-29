@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Challenge.API.DAL.Impl;
 using Challenge.API.Model;
@@ -15,8 +16,28 @@ namespace Challenge.API.Controllers
     {
         // GET: api/Book
         [HttpGet]
-        public IEnumerable<Book> Get(string Name, string AuthorName, bool PriceDesc)
+        public IEnumerable<Book> Get(string Name, string AuthorName, bool orderBy)
         {
+            List<Func<Book, bool>> filters = new List<Func<Book, bool>>();
+            if (!String.IsNullOrEmpty(Name))
+            {
+                Func<Book, bool> name = b => b.name.Contains(Name);
+                filters.Add(name);
+            }
+
+            if (!String.IsNullOrEmpty(Name))
+            {
+                Func<Book, bool> authorName = b => b.specifications.Author.Contains(AuthorName);
+                filters.Add(authorName);
+            }
+
+            BookRepository bookRepository = new BookRepository();
+
+            if (orderBy)
+            {
+                bookRepository.OrderByPrice();
+            }
+
             return new BookRepository().GetList();
         }
 

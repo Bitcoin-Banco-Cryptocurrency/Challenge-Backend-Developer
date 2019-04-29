@@ -9,8 +9,8 @@ namespace Challenge.API.DAL.Repository
 {
     public interface IBookRepository
     {
-        void Filter(List<Expression<Func<Book, bool>>> filters);
-        void OrderByPrice(Expression<Func<Book, float>> expression);
+        void Filter(List<Func<Book, bool>> filters);
+        void OrderByPrice();
         List<Book> GetList();
         Book GetBookById(int id);
     }
