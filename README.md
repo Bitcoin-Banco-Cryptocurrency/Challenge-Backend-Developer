@@ -34,3 +34,16 @@ Remember that at the time of the evaluation we will look at:
 To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
+
+==============================================================
+
+an explanation of what is needed to make your project work;
+- An environment with node installed is mandatory
+- After downloading the code, go to the folder and type the following command line: node index.js
+
+an explanation of how to perform the tests
+- Endpoint is called search: localhost:3000/search
+- The following are accepted via query string: published to search in Originally published; author to search in Author; pageCount to search in Page count, illustrator to search in Illustrator; genre to search in Genres; order to order by price (ASC or DESC values only)
+- Only one value per parameter is possible and it must be the exact value found in one of the items in books.json
+- You can combine parameters
+- Examples: http://localhost:3000/search?genre=Adventure%20fiction, http://localhost:3000/search?author=J.%20K.%20Rowling&order=ASC, http://localhost:3000/search?author=J.%20K.%20Rowling&order=DESC, http://localhost:3000/search?illustrator=Cliff%20Wright&order=ASC
