@@ -1,0 +1,22 @@
+{
+  "name": "challenge-backend-developer",
+  "version": "1.0.0",
+  "description": "Bitcoin test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffiaux/Challenge-Backend-Developer.git"
+  },
+  "author": "Fernando Fiaux de Moraes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffiaux/Challenge-Backend-Developer/issues"
+  },
+  "homepage": "https://github.com/ffiaux/Challenge-Backend-Developer#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
