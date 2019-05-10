@@ -1,0 +1,11 @@
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\bin\Debug\netcoreapp2.0\BTC_API.deps.json
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\bin\Debug\netcoreapp2.0\BTC_API.runtimeconfig.json
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\bin\Debug\netcoreapp2.0\BTC_API.runtimeconfig.dev.json
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\bin\Debug\netcoreapp2.0\BTC_API.dll
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\bin\Debug\netcoreapp2.0\BTC_API.pdb
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\obj\Debug\netcoreapp2.0\BTC_API.csprojAssemblyReference.cache
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\obj\Debug\netcoreapp2.0\BTC_API.csproj.CoreCompileInputs.cache
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\obj\Debug\netcoreapp2.0\BTC_API.AssemblyInfoInputs.cache
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\obj\Debug\netcoreapp2.0\BTC_API.AssemblyInfo.cs
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\obj\Debug\netcoreapp2.0\BTC_API.dll
+C:\Users\dmmk6\source\repos\BTC-API\BTC-API\obj\Debug\netcoreapp2.0\BTC_API.pdb
