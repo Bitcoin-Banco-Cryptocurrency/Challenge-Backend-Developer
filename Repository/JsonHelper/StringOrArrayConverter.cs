@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-
-using System.Globalization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using Repository.Entities;
 
 namespace Repository.JsonHelper
 {
-    internal class GenresConverter : JsonConverter
+    internal class StringOrArrayConverter : JsonConverter
     {
-        public override bool CanConvert(Type t) => t == typeof(Genres) || t == typeof(Genres?);
+        public override bool CanConvert(Type t) => t == typeof(StringOrArray) || t == typeof(StringOrArray?);
 
         public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
         {
@@ -19,17 +16,17 @@ namespace Repository.JsonHelper
                 case JsonToken.String:
                 case JsonToken.Date:
                     var stringValue = serializer.Deserialize<string>(reader);
-                    return new Genres { String = stringValue };
+                    return new StringOrArray { String = stringValue };
                 case JsonToken.StartArray:
                     var arrayValue = serializer.Deserialize<List<string>>(reader);
-                    return new Genres { StringArray = arrayValue };
+                    return new StringOrArray { StringArray = arrayValue };
             }
             throw new Exception("Cannot unmarshal type Genres");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
         {
-            var value = (Genres)untypedValue;
+            var value = (StringOrArray)untypedValue;
             if (value.String != null)
             {
                 serializer.Serialize(writer, value.String);
@@ -43,6 +40,6 @@ namespace Repository.JsonHelper
             throw new Exception("Cannot marshal type Genres");
         }
 
-        public static readonly GenresConverter Singleton = new GenresConverter();
+        public static readonly StringOrArrayConverter Singleton = new StringOrArrayConverter();
     }
 }

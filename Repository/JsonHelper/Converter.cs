@@ -15,7 +15,7 @@ namespace Repository.JsonHelper
             DateParseHandling = DateParseHandling.None,
             Converters =
             {
-                GenresConverter.Singleton,
+                StringOrArrayConverter.Singleton,
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
             },
         };

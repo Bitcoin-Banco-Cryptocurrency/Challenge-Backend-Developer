@@ -14,9 +14,9 @@ namespace Repository.Entities
         public long PageCount { get; set; }
 
         [JsonProperty("Illustrator")]
-        public Genres Illustrator { get; set; }
+        public StringOrArray Illustrator { get; set; }
 
         [JsonProperty("Genres")]
-        public Genres Genres { get; set; }
+        public StringOrArray Genres { get; set; }
     }
 }
