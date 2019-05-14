@@ -1,0 +1,17 @@
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\Data\books.json
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.deps.json
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.dll
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.pdb
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Application.dll
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.dll
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Infra.Data.dll
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Application.pdb
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Infra.Data.pdb
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.pdb
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.AssemblyInfo.cs
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.csproj.CopyComplete
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.dll
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.IoC\obj\Debug\netcoreapp2.2\BBCReadJson.Infra.CrossCutting.IoC.pdb
