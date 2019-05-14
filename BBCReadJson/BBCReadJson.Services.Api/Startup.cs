@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BBCReadJson.IoC;
+using BBCReadJson.Services.Api.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -47,11 +48,13 @@ namespace BBCReadJson.Services.Api
                     });
             });
 
+            services.AddAutoMapperSetup();
+
             // .NET Native DI Abstraction
             RegisterServices(services);
         }
 
-       
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
