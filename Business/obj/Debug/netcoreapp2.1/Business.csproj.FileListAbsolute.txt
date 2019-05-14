@@ -1,0 +1,9 @@
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.1\Business.deps.json
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.1\Business.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.1\Business.pdb
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.1\Business.csprojAssemblyReference.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.1\Business.AssemblyInfoInputs.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.1\Business.AssemblyInfo.cs
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.1\Business.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.1\Business.pdb
