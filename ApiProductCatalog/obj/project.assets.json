@@ -4334,6 +4334,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -11799,6 +11812,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    },
     "Repository/1.0.0": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
@@ -11807,6 +11825,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Business >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -11843,6 +11862,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Alexandre\\Documents\\GitHub\\Challenge-Backend-Developer\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Alexandre\\Documents\\GitHub\\Challenge-Backend-Developer\\Business\\Business.csproj"
+            },
             "C:\\Users\\Alexandre\\Documents\\GitHub\\Challenge-Backend-Developer\\Repository\\Repository.csproj": {
               "projectPath": "C:\\Users\\Alexandre\\Documents\\GitHub\\Challenge-Backend-Developer\\Repository\\Repository.csproj"
             }

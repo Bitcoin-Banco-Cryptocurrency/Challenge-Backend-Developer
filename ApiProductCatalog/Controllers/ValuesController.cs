@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Repository.Repositories;
+using Business.Services;
 
 namespace ApiProductCatalog.Controllers
 {
@@ -16,7 +13,7 @@ namespace ApiProductCatalog.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            var repo = new ProductRepository();
+            var productService = new ProductService();
             var product = new Repository.Entities.Product
             {
                 // Name = "Journey",
@@ -38,7 +35,7 @@ namespace ApiProductCatalog.Controllers
                 }
             };
 
-            var a = repo.Get(product, false);
+            var resultado = productService.Get(product, false);
 
             return new string[] { JsonConvert.SerializeObject(a, Repository.JsonHelper.Converter.Settings) };
         }
