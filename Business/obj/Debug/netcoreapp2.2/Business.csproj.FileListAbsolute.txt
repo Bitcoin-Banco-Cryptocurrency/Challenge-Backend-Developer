@@ -1,0 +1,12 @@
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.2\Business.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.csprojAssemblyReference.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.csproj.CopyComplete
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Business\obj\Debug\netcoreapp2.2\Business.pdb
