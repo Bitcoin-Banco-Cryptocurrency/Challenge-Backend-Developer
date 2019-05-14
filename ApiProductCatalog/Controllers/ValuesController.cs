@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Repository.Repositories;
 
 namespace ApiProductCatalog.Controllers
@@ -16,9 +17,30 @@ namespace ApiProductCatalog.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
             var repo = new ProductRepository();
-            var a = repo.Get();
+            var product = new Repository.Entities.Product
+            {
+                // Name = "Journey",
+                Specifications = new Repository.Entities.Specifications
+                {
+                    //Author = "Jules",
+                    //Genres = new Repository.Entities.StringOrArray
+                    //{
+                    //    String = "Adventure"
+                    //},
+                    //Illustrator = new Repository.Entities.StringOrArray
+                    //{
+                    //    String = "Édouard"
+                    //},
+                    //PagesMin = 200,
+                    //PagesMax = 300,
+                    //PublishedMin = new DateTime(2000, 01, 01),
+                    //PublishedMax = new DateTime(2000, 01, 01),
+                }
+            };
 
-            return new string[] { "value1", "value2" };
+            var a = repo.Get(product, false);
+
+            return new string[] { JsonConvert.SerializeObject(a, Repository.JsonHelper.Converter.Settings) };
         }
 
         // GET api/values/5

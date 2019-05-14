@@ -11,7 +11,7 @@ namespace Repository.Entities
         public string Name { get; set; }
 
         [JsonProperty("price")]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
         [JsonProperty("specifications")]
         public Specifications Specifications { get; set; }
