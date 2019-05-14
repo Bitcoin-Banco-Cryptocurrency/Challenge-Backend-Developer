@@ -1,0 +1,9 @@
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\bin\Debug\netcoreapp2.2\Repository.deps.json
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\obj\Debug\netcoreapp2.2\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\obj\Debug\netcoreapp2.2\Repository.AssemblyInfoInputs.cache
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\obj\Debug\netcoreapp2.2\Repository.AssemblyInfo.cs
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\obj\Debug\netcoreapp2.2\Repository.dll
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\obj\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\Alexandre\Documents\GitHub\Challenge-Backend-Developer\Repository\obj\Debug\netcoreapp2.2\Repository.csprojAssemblyReference.cache

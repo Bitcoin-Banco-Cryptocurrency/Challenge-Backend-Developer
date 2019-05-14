@@ -5,6 +5,9 @@ namespace Repository.Entities
 {
     public class Specifications
     {
+        [JsonProperty("id")]
+        public long Id { get; set; }
+
         [JsonProperty("Originally published")]
         public DateTime OriginallyPublished { get; set; }
 

@@ -21,7 +21,7 @@ namespace Repository.JsonHelper
                     var arrayValue = serializer.Deserialize<List<string>>(reader);
                     return new StringOrArray { StringArray = arrayValue };
             }
-            throw new Exception("Cannot unmarshal type Genres");
+            throw new Exception("Cannot unmarshal type StringOrArray");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
