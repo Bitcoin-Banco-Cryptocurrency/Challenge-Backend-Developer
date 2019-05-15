@@ -46,3 +46,4 @@ C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCRe
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Services.Api\obj\Debug\netcoreapp2.2\BBCReadJson.Services.Api.csproj.CopyComplete
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Services.Api\obj\Debug\netcoreapp2.2\BBCReadJson.Services.Api.dll
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Services.Api\obj\Debug\netcoreapp2.2\BBCReadJson.Services.Api.pdb
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Services.Api\bin\Debug\netcoreapp2.2\BBCReadJson.Services.Api.xml

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Services.Api\BBCReadJson.Services.Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using AutoMapper;
 using BBCReadJson.Application.Interfaces;
@@ -20,16 +21,31 @@ namespace BBCReadJson.Application.Services
             _mapper = mapper;
         }
 
-        public IEnumerable<BookViewModel> GetBooks(string search)
+        public IEnumerable<BookViewModel> GetBooks(string search, string order)
         {
             var list = _bookRepository.GetAll();
 
             var model = _mapper.Map<List<BookViewModel>>(list);
 
-            //realizar o filtro
-            //realizar o order by preço
+            search = search.ToLower();
 
-            return model;
+            var ret = model.Where(x =>
+                x.Name.ToLower().Contains(search) ||
+                x.Specifications.Author.ToLower().Contains(search) ||
+                x.Specifications.Illustrator.Where(i => i.ToLower().Contains(search)).Any() ||
+                x.Specifications.Genres.Where(i => i.ToLower().Contains(search)).Any());
+
+            switch (order)
+            {
+                case "PriceASC":
+                    ret = ret.OrderBy(x => x.Price);
+                    break;
+                case "PriceDESC":
+                    ret = ret.OrderByDescending(x => x.Price);
+                    break;
+            }
+
+            return ret;
         }
     }
 }

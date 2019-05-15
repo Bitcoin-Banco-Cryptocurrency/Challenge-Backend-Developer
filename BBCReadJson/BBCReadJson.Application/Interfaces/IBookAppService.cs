@@ -7,6 +7,6 @@ namespace BBCReadJson.Application.Interfaces
 {
     public interface IBookAppService
     {
-        IEnumerable<BookViewModel> GetBooks(string search);
+        IEnumerable<BookViewModel> GetBooks(string search, string order);
     }
 }

@@ -3,23 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentatioin", "1 - Presentatioin", "{302F5F93-0650-4A86-A5FE-D0BF139AFB9A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{D8427E70-3254-4B1D-ADE5-9C4D8AF59D8F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{D8427E70-3254-4B1D-ADE5-9C4D8AF59D8F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{FB3DF56E-6E4D-4769-B224-453003D4DD1C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{FB3DF56E-6E4D-4769-B224-453003D4DD1C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{DC8B37D4-F3EC-4B15-BBB1-6E1C22357651}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{DC8B37D4-F3EC-4B15-BBB1-6E1C22357651}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{43D5E962-846D-4006-90AD-5CD42603BD15}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{43D5E962-846D-4006-90AD-5CD42603BD15}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBCReadJson.Services.Api", "BBCReadJson.Services.Api\BBCReadJson.Services.Api.csproj", "{4BA891CC-5B13-4873-9F3D-6311845DCCD8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBCReadJson.Application", "BBCReadJson.Application\BBCReadJson.Application.csproj", "{B5349D73-835E-4122-9D0D-8DBD37D7504F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{247D1F43-B11A-4172-BF6E-132CD2877881}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{247D1F43-B11A-4172-BF6E-132CD2877881}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{3F305620-9757-41D2-A7A5-CE28E95E3AC4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{3F305620-9757-41D2-A7A5-CE28E95E3AC4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBCReadJson.Infra.CrossCutting.IoC", "BBCReadJson.IoC\BBCReadJson.Infra.CrossCutting.IoC.csproj", "{EC145FAB-2D53-4993-BB58-3F08AD218C3E}"
 EndProject

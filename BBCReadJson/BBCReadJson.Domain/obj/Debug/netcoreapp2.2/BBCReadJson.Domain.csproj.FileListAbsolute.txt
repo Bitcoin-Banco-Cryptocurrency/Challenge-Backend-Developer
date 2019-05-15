@@ -10,12 +10,11 @@ C:\Users\vinic\source\repos\GitHub\Bitcoin-Banco-Cryptocurrency\Challenge-Backen
 C:\Users\vinic\source\repos\GitHub\Bitcoin-Banco-Cryptocurrency\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
 C:\Users\vinic\source\repos\GitHub\Bitcoin-Banco-Cryptocurrency\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
 C:\Users\vinic\source\repos\GitHub\Bitcoin-Banco-Cryptocurrency\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.csproj.CopyComplete
-C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.csprojAssemblyReference.cache
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.deps.json
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.dll
+C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.pdb
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.csproj.CoreCompileInputs.cache
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.AssemblyInfoInputs.cache
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.AssemblyInfo.cs
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.dll
 C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\obj\Debug\netcoreapp2.2\BBCReadJson.Domain.pdb
-C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.deps.json
-C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.dll
-C:\Users\vinic\source\repos\GitHub\Challenge-Backend-Developer\BBCReadJson\BBCReadJson.Domain\bin\Debug\netcoreapp2.2\BBCReadJson.Domain.pdb
