@@ -34,3 +34,21 @@ Remember that at the time of the evaluation we will look at:
 To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
+
+==========================================================================
+
+To make the project work:
+
+1 - Visual Studio 2019 required;
+2 - Set as StartUp project BBCReadJson.Services.Api;
+3 - The Challenge-Backend-Developer / BBCReadJson / BBCReadJson.Infra.Data / Data / books.json file is with the Copy to Output Directory property to Copy always;
+4 - Run the project;
+
+To perform the tests:
+
+1 - When running the project the screen with the swagger will open;
+2 - Fill in the required parameters:
+  2.1 - Parameter search: Search by Name, Author, Illustrator and Genres.
+  2.2 - Parameter order: Order by PriceASC or PriceDESC, any other value will not be performed ordering.
+3 - Click execute;
+4 - Wait for the return to appear just below;
