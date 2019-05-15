@@ -9,7 +9,7 @@
             Get books from json.
             </summary>
             <param name="search">Search by Name, Author, Illustrator and Genres.</param>
-            <param name="order">Order by price ASC or DESC.</param>
+            <param name="order">Order by PriceASC or PriceDESC.</param>
             <returns></returns>
         </member>
     </members>
