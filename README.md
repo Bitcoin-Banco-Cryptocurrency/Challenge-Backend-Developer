@@ -34,3 +34,12 @@ Remember that at the time of the evaluation we will look at:
 To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
+
+==
+
+### Requirements
+- .NET Core 2.2
+- Visual Studio 2019 or VS Code
+- Test
+  - Visual Studio - Test menu > Run > All tests (Ctrl + R, A)
+  - VS Code - Execute dotnet test
