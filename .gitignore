@@ -3,3 +3,15 @@
 ################################################################################
 
 /.vs/BancoBitcoin
+/src/BancoBitcoin.Api/bin/Debug/netcoreapp2.2
+/src/BancoBitcoin.Api/obj
+/src/BancoBitcoin.Api/Properties
+/src/BancoBitcoin.Application/obj
+/src/BancoBitcoin.Configuration/bin/Debug
+/src/BancoBitcoin.Configuration/obj
+/src/BancoBitcoin.Domain/bin/Debug
+/src/BancoBitcoin.Domain/obj
+/src/BancoBitcoin.Repository/bin/Debug
+/src/BancoBitcoin.Repository/obj
+/test/BancoBitcoin.Test/bin/Debug/netcoreapp2.2
+/test/BancoBitcoin.Test/obj
