@@ -12,6 +12,6 @@ namespace BancoBitcoin.Domain.Entity
 
         public decimal Price { get; set; }
 
-        public List<Specification> Specifications { get; set; }
+        public Specification Specifications { get; set; }
     }
 }

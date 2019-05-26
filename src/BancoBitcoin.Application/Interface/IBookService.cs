@@ -5,6 +5,6 @@ namespace BancoBitcoin.Application.Interface
 {
     public interface IBookService
     {
-        List<Book> GetBooks();
+        IList<Book> GetBooks();
     }
 }

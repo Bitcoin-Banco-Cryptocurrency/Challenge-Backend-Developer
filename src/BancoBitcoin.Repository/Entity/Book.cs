@@ -1,23 +1,20 @@
 ﻿using BancoBitcoin.Domain.Entity;
 using BancoBitcoin.Domain.Repository;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace BancoBitcoin.Repository.Entity
 {
     public class BookRepository : IBookRepository
     {
-        public List<Book> GetBooks()
+        public IList<Book> GetBooks()
         {
-            var books = new List<Book>();
-            var jsonPath = System.Reflection.Assembly.GetEntryAssembly().Location + "books.json";
-
-            using (StreamReader file = File.OpenText(jsonPath))
-            {
-                var serializer = new JsonSerializer();
-                books = (List<Book>)serializer.Deserialize(file, typeof(Book));
-            }
+            var jsonPath = AppDomain.CurrentDomain.BaseDirectory + "books.json";
+            string json = File.ReadAllText(jsonPath, Encoding.UTF8);            
+            var books = JsonConvert.DeserializeObject<IList<Book>>(json);
 
             return books;
         }

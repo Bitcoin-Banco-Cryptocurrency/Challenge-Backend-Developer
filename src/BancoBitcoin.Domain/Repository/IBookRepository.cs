@@ -5,6 +5,6 @@ namespace BancoBitcoin.Domain.Repository
 {
     public interface IBookRepository
     {
-        List<Book> GetBooks();
+        IList<Book> GetBooks();
     }
 }
