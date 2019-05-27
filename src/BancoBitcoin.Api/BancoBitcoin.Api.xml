@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BancoBitcoin.Api</name>
+    </assembly>
+    <members>
+        <member name="M:BancoBitcoin.Api.Controllers.BookController.GetBooks">
+            <summary>
+            Get all the books
+            </summary>
+            <response code="200">Result of all the books</response>
+            <response code="500">System Error</response>
+        </member>
+        <member name="M:BancoBitcoin.Api.Controllers.BookController.GetBooksByName(System.String,System.Boolean)">
+            <summary>
+            Get books by name
+            </summary>
+            <param name="name">Name of the book</param>
+            <param name="order">Order by asc = false and Order by desc = true</param>
+            <response code="200">Result of the book</response>
+            <response code="500">System Error</response>
+        </member>
+        <member name="M:BancoBitcoin.Api.Controllers.BookController.GetBooksBy(System.Int32,System.String,System.Decimal,System.Boolean)">
+            <summary>
+            Get books by id, name or price
+            </summary>
+            <param name="id">Id of the book</param>
+            <param name="name">Name of the book</param>
+            <param name="price">Price of the book</param>
+            <param name="order">Order by asc = false and Order by desc = true</param>
+            <response code="200">Result of the books</response>
+            <response code="500">System Error</response>
+        </member>
+    </members>
+</doc>

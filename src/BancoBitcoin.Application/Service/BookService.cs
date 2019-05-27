@@ -19,5 +19,15 @@ namespace BancoBitcoin.Application.Service
         {
             return _bookRepository.GetBooks();
         }
+
+        public IList<Book> GetBooksByName(string name, bool order)
+        {
+            return _bookRepository.GetBooksByName(name, order);
+        }
+
+        public IList<Book> GetBooksBy(int id, string name, decimal price, bool order)
+        {
+            return _bookRepository.GetBooksBy(id, name, price, order);
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace BancoBitcoin.Domain.Entity
 
         public string Author { get; set; }
 
-        [JsonProperty("Page count")]
+        [JsonProperty(PropertyName = "Page count")]
         public int PageCount { get; set; }
 
         [JsonConverter(typeof(SingleValueArrayConverter<string>))]

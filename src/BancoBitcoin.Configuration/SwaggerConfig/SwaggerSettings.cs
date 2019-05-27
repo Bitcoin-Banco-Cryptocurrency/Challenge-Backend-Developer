@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
+using System.IO;
 using System.Text;
 
 namespace BancoBitcoin.Configuration.SwaggerConfig
@@ -22,6 +23,9 @@ namespace BancoBitcoin.Configuration.SwaggerConfig
                                 Version = "v1",
                                 Description = sb.ToString()
                             });
+
+                var filePath = Path.Combine(System.AppContext.BaseDirectory, "BancoBitcoin.Api.xml");
+                c.IncludeXmlComments(filePath);
             });
 
             return services;
@@ -38,7 +42,7 @@ namespace BancoBitcoin.Configuration.SwaggerConfig
             app.UseSwaggerUI(c =>
             {
                 c.RoutePrefix = "swagger";
-                c.SwaggerEndpoint("/v1/swagger/v1/swagger.json", "Softplan Swagger V1");
+                c.SwaggerEndpoint("/v1/swagger/v1/swagger.json", "Grupo Banco Bitcoin Swagger V1");
             });
 
             return app;
