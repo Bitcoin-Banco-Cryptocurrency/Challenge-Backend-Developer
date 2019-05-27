@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitcoin.Api", "src\Ban
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitcoin.Test", "test\BancoBitcoin.Test\BancoBitcoin.Test.csproj", "{758185C8-9626-4E32-8E5C-7882B77C5C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoBitcoin.Repository", "src\BancoBitcoin.Repository\BancoBitcoin.Repository.csproj", "{A4CA6EF8-8EFC-4D11-9B7F-A95678B2F5E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitcoin.Repository", "src\BancoBitcoin.Repository\BancoBitcoin.Repository.csproj", "{A4CA6EF8-8EFC-4D11-9B7F-A95678B2F5E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoBitcoin.Domain", "src\BancoBitcoin.Domain\BancoBitcoin.Domain.csproj", "{C7FDE35B-B49A-4660-A0C1-2B1290DDE4E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitcoin.Domain", "src\BancoBitcoin.Domain\BancoBitcoin.Domain.csproj", "{C7FDE35B-B49A-4660-A0C1-2B1290DDE4E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoBitcoin.Configuration", "src\BancoBitcoin.Configuration\BancoBitcoin.Configuration.csproj", "{72B48383-EDEB-419A-8BC1-3A35AD4FC3A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitcoin.Configuration", "src\BancoBitcoin.Configuration\BancoBitcoin.Configuration.csproj", "{72B48383-EDEB-419A-8BC1-3A35AD4FC3A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoBitcoin.Application", "src\BancoBitcoin.Application\BancoBitcoin.Application.csproj", "{B4ED00C9-39D2-4E81-BF5F-86AE9F24BE3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitcoin.Application", "src\BancoBitcoin.Application\BancoBitcoin.Application.csproj", "{B4ED00C9-39D2-4E81-BF5F-86AE9F24BE3E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{98C8AA47-722F-402B-8000-1DF8DD635E7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,18 @@ Global
 		{B4ED00C9-39D2-4E81-BF5F-86AE9F24BE3E}.Release|x64.Build.0 = Release|Any CPU
 		{B4ED00C9-39D2-4E81-BF5F-86AE9F24BE3E}.Release|x86.ActiveCfg = Release|Any CPU
 		{B4ED00C9-39D2-4E81-BF5F-86AE9F24BE3E}.Release|x86.Build.0 = Release|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Debug|x64.Build.0 = Debug|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Debug|x86.Build.0 = Debug|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Release|x64.ActiveCfg = Release|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Release|x64.Build.0 = Release|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Release|x86.ActiveCfg = Release|Any CPU
+		{98C8AA47-722F-402B-8000-1DF8DD635E7E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

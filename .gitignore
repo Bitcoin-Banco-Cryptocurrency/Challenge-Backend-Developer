@@ -15,3 +15,6 @@
 /test/BancoBitcoin.Test/bin/Debug/netcoreapp2.2
 /test/BancoBitcoin.Test/obj
 /src/BancoBitcoin.Application/bin/Debug/netcoreapp2.2
+/bin/Debug
+/obj/Debug
+/obj/Docker

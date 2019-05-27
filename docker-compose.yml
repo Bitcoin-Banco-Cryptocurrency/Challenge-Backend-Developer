@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bancobitcoin.api:
+    image: ${DOCKER_REGISTRY-}bancobitcoinapi
+    build:
+      context: .
+      dockerfile: src/BancoBitcoin.Api/Dockerfile

@@ -14,7 +14,7 @@ namespace BancoBitcoin.Configuration.SwaggerConfig
             {
                 var sb = new StringBuilder();
                 sb.AppendLine("Api para teste do Grupo Banco Bitcoin.");
-                sb.AppendLine("Aplicação desenvolvida na plataforna .Net utilizando ASP.NET Core e atualmente hospedadada em container docker.");
+                sb.AppendLine("Aplicação desenvolvida na plataforna .Net utilizando ASP.NET Core e atualmente hospedadada em docker container.");
 
                 c.SwaggerDoc("v1",
                             new Info

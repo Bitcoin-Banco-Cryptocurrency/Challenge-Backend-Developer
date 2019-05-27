@@ -47,9 +47,9 @@ namespace BancoBitcoin.Api.Controllers
         /// <summary>
         /// Get books by specification
         /// </summary>
-        /// <param name="originallyPublished">Id of the book</param>
-        /// <param name="author">Name of the book</param>
-        /// <param name="pageCount">Price of the book</param>
+        /// <param name="originallyPublished">Originally published date</param>
+        /// <param name="author">Author's name</param>
+        /// <param name="pageCount">Number of pages</param>
         /// <param name="order">Order by asc = false and Order by desc = true</param>
         /// <response code="200">Result of the books</response>
         /// <response code="500">System Error</response>
