@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BancoBitcoin.Domain\BancoBitcoin.Domain.csproj" />
-    <ProjectReference Include="..\BancoBitcoin.Repository\BancoBitcoin.Repository.csproj" />
   </ItemGroup>
 
 </Project>

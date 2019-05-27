@@ -17,11 +17,14 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="SimpleInjector" Version="4.6.0" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc.Core" Version="4.6.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BancoBitcoin.Application\BancoBitcoin.Application.csproj" />
     <ProjectReference Include="..\BancoBitcoin.Configuration\BancoBitcoin.Configuration.csproj" />
+    <ProjectReference Include="..\BancoBitcoin.Repository\BancoBitcoin.Repository.csproj" />
   </ItemGroup>
 
 </Project>

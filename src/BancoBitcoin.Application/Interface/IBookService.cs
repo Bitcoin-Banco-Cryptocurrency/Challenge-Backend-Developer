@@ -7,8 +7,8 @@ namespace BancoBitcoin.Application.Interface
     {
         IList<Book> GetBooks();
 
-        IList<Book> GetBooksByName(string name, bool order);
-
         IList<Book> GetBooksBy(int id, string name, decimal price, bool order);
+
+        IList<Book> GetBooksBy(string originallyPublished, string author, int pageCount, bool order);
     }
 }

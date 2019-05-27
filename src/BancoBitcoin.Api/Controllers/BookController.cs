@@ -1,5 +1,4 @@
 ﻿using BancoBitcoin.Application.Interface;
-using BancoBitcoin.Application.Service;
 using BancoBitcoin.Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -12,12 +11,11 @@ namespace BancoBitcoin.Api.Controllers
     {
         public IBookService _bookService { get; set; }
 
-        public BookController()
+        public BookController(IBookService bookService)
         {
-            _bookService = new BookService();
+            _bookService = bookService;
         }
 
-        // GET api/book/Harry Potter and the Goblet of Fire
         /// <summary>
         /// Get all the books
         /// </summary>
@@ -30,24 +28,8 @@ namespace BancoBitcoin.Api.Controllers
             return _bookService.GetBooks() as List<Book>;
         }
 
-        // GET api/book/Harry Potter and the Goblet of Fire
         /// <summary>
-        /// Get books by name
-        /// </summary>
-        /// <param name="name">Name of the book</param>
-        /// <param name="order">Order by asc = false and Order by desc = true</param>
-        /// <response code="200">Result of the book</response>
-        /// <response code="500">System Error</response>
-        [HttpGet]
-        [Route("GetBooksByName")]
-        public ActionResult<IList<Book>> GetBooksByName(string name = "", bool order = false)
-        {
-            return _bookService.GetBooksByName(name, order) as List<Book>;
-        }
-
-        // GET api/book/Harry Potter and the Goblet of Fire
-        /// <summary>
-        /// Get books by id, name or price
+        /// Get books by information
         /// </summary>
         /// <param name="id">Id of the book</param>
         /// <param name="name">Name of the book</param>
@@ -56,10 +38,26 @@ namespace BancoBitcoin.Api.Controllers
         /// <response code="200">Result of the books</response>
         /// <response code="500">System Error</response>
         [HttpGet]
-        [Route("GetBooksBy")]
-        public ActionResult<IList<Book>> GetBooksBy(int id = 0, string name = "", decimal price = 0, bool order = false)
+        [Route("GetBooksByInformation")]
+        public ActionResult<IList<Book>> GetBooksByInformation(int id = 0, string name = "", decimal price = 0, bool order = false)
         {
             return _bookService.GetBooksBy(id, name, price, order) as List<Book>;
+        }
+
+        /// <summary>
+        /// Get books by specification
+        /// </summary>
+        /// <param name="originallyPublished">Id of the book</param>
+        /// <param name="author">Name of the book</param>
+        /// <param name="pageCount">Price of the book</param>
+        /// <param name="order">Order by asc = false and Order by desc = true</param>
+        /// <response code="200">Result of the books</response>
+        /// <response code="500">System Error</response>
+        [HttpGet]
+        [Route("GetBooksBySpecification")]
+        public ActionResult<IList<Book>> GetBooksBySpecification(string originallyPublished = "", string author = "", int pageCount = 0, bool order = false)
+        {
+            return _bookService.GetBooksBy(originallyPublished, author, pageCount, order) as List<Book>;
         }
     }
 }

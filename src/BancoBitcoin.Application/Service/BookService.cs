@@ -1,7 +1,6 @@
 ﻿using BancoBitcoin.Application.Interface;
 using BancoBitcoin.Domain.Entity;
 using BancoBitcoin.Domain.Repository;
-using BancoBitcoin.Repository.Entity;
 using System.Collections.Generic;
 
 namespace BancoBitcoin.Application.Service
@@ -10,24 +9,24 @@ namespace BancoBitcoin.Application.Service
     {
         private IBookRepository _bookRepository { get; set; }
 
-        public BookService()
+        public BookService(IBookRepository bookRepository)
         {
-            _bookRepository = new BookRepository();
+            _bookRepository = bookRepository;
         }
 
         public IList<Book> GetBooks()
         {
             return _bookRepository.GetBooks();
         }
-
-        public IList<Book> GetBooksByName(string name, bool order)
-        {
-            return _bookRepository.GetBooksByName(name, order);
-        }
-
+        
         public IList<Book> GetBooksBy(int id, string name, decimal price, bool order)
         {
             return _bookRepository.GetBooksBy(id, name, price, order);
+        }
+
+        public IList<Book> GetBooksBy(string originallyPublished, string author, int pageCount, bool order)
+        {
+            return _bookRepository.GetBooksBy(originallyPublished, author, pageCount, order);
         }
     }
 }

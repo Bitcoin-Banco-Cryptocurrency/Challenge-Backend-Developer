@@ -1,14 +1,18 @@
-﻿using BancoBitcoin.Configuration.SwaggerConfig;
+﻿using BancoBitcoin.Api.Configuration;
+using BancoBitcoin.Configuration.SwaggerConfig;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SimpleInjector;
 
 namespace BancoBitcoin.Api
 {
     public class Startup
     {
+        private Container _container = new Container();
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -20,6 +24,7 @@ namespace BancoBitcoin.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddConfigurationSimpleInjector(_container);
             services.AddConfigurationSwaggerGen();
         }
 
@@ -34,6 +39,8 @@ namespace BancoBitcoin.Api
             {
                 app.UseHsts();
             }
+
+            _container.InitializeComponents(app);
 
             app.AddConfigurationSwaggerUI();
             app.UseHttpsRedirection();
