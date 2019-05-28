@@ -11,7 +11,31 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:5000/api/Book/GetBooksBySpecification?author=Jule&pageCount=0&order=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Book",
+						"GetBooksBySpecification"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "Jule"
+						},
+						{
+							"key": "pageCount",
+							"value": "0"
+						},
+						{
+							"key": "order",
+							"value": "false"
+						}
+					]
 				}
 			},
 			"response": []
