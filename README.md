@@ -58,7 +58,7 @@ File has been added Teste.postman_collection.json for integration test by Newman
 
 ![alt text](https://github.com/awilliansd/Challenge-Backend-Developer/blob/master/assets/TestShellCommand.png)
 
-** KITEMATIC
+** KITEMATIC - DOCKER HUB
 
 ![alt text](https://github.com/awilliansd/Challenge-Backend-Developer/blob/master/assets/Kitematic.png)
 
