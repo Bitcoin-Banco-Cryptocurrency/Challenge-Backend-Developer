@@ -50,7 +50,7 @@ For example, to get a book by url parameters:
 
 File has been added Teste.postman_collection.json for integration test by Newman.
 
-** SYSTEM
+** SYSTEM - SWAGGER
 
 ![alt text](https://github.com/awilliansd/Challenge-Backend-Developer/blob/master/assets/Sistema.png)
 
@@ -64,7 +64,5 @@ File has been added Teste.postman_collection.json for integration test by Newman
 
 
 ** POSTMAN - NEWMAN
-
-** KITEMATIC
 
 ![alt text](https://github.com/awilliansd/Challenge-Backend-Developer/blob/master/assets/Postman.png)
