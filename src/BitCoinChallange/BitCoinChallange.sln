@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinChallange.Domain", "BitCoinChallange.Domain\BitCoinChallange.Domain.csproj", "{2D490E1F-C232-4A90-8049-4F539F4CF022}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02624068-8018-40DA-8BEF-F0662186EDDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{6EF7F662-5BA0-4330-9988-52DE2940A25C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Service", "2-Service", "{6EA58529-63C0-4D14-90D8-186B61E75DD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Application", "3-Application", "{93078F64-26A1-4589-AA31-83D4AB3F198F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Domain", "4-Domain", "{E1AA7837-ADB2-4757-B35B-45CAE4557FFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Infra", "5-Infra", "{9C94DFEB-620A-40D1-86C9-9924EF2E11EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinChallange.Domain.Kernel", "BitCoinChallange.Domain.Kernel\BitCoinChallange.Domain.Kernel.csproj", "{39F73048-D401-443B-9955-9A2D1D854A39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1-Infra.CrossCutting", "5.1-Infra.CrossCutting", "{387FB650-9E76-41C8-AA2E-0FEA8A3AC69B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinChallange.Api", "BitCoinChallange.Api\BitCoinChallange.Api.csproj", "{F73431B3-45B2-4509-880A-A0A4F3EA60F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinChallange.Infra.CrossCutting", "BitCoinChallange.Infra.CrossCutting\BitCoinChallange.Infra.CrossCutting.csproj", "{2F0DEA83-4003-4413-A3B9-1DC971BEAF46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinChallange.Infra.CrossCutting.Ioc", "BitCoinChallange.Infra.CrossCutting.Ioc\BitCoinChallange.Infra.CrossCutting.Ioc.csproj", "{E000FEFF-C19F-4393-A063-8FECB7AF365F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D490E1F-C232-4A90-8049-4F539F4CF022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D490E1F-C232-4A90-8049-4F539F4CF022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D490E1F-C232-4A90-8049-4F539F4CF022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D490E1F-C232-4A90-8049-4F539F4CF022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F73048-D401-443B-9955-9A2D1D854A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F73048-D401-443B-9955-9A2D1D854A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F73048-D401-443B-9955-9A2D1D854A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F73048-D401-443B-9955-9A2D1D854A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F73431B3-45B2-4509-880A-A0A4F3EA60F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73431B3-45B2-4509-880A-A0A4F3EA60F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73431B3-45B2-4509-880A-A0A4F3EA60F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73431B3-45B2-4509-880A-A0A4F3EA60F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0DEA83-4003-4413-A3B9-1DC971BEAF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0DEA83-4003-4413-A3B9-1DC971BEAF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0DEA83-4003-4413-A3B9-1DC971BEAF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0DEA83-4003-4413-A3B9-1DC971BEAF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E000FEFF-C19F-4393-A063-8FECB7AF365F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E000FEFF-C19F-4393-A063-8FECB7AF365F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E000FEFF-C19F-4393-A063-8FECB7AF365F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E000FEFF-C19F-4393-A063-8FECB7AF365F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D490E1F-C232-4A90-8049-4F539F4CF022} = {E1AA7837-ADB2-4757-B35B-45CAE4557FFD}
+		{6EF7F662-5BA0-4330-9988-52DE2940A25C} = {02624068-8018-40DA-8BEF-F0662186EDDA}
+		{6EA58529-63C0-4D14-90D8-186B61E75DD6} = {02624068-8018-40DA-8BEF-F0662186EDDA}
+		{93078F64-26A1-4589-AA31-83D4AB3F198F} = {02624068-8018-40DA-8BEF-F0662186EDDA}
+		{E1AA7837-ADB2-4757-B35B-45CAE4557FFD} = {02624068-8018-40DA-8BEF-F0662186EDDA}
+		{9C94DFEB-620A-40D1-86C9-9924EF2E11EF} = {02624068-8018-40DA-8BEF-F0662186EDDA}
+		{39F73048-D401-443B-9955-9A2D1D854A39} = {E1AA7837-ADB2-4757-B35B-45CAE4557FFD}
+		{387FB650-9E76-41C8-AA2E-0FEA8A3AC69B} = {9C94DFEB-620A-40D1-86C9-9924EF2E11EF}
+		{F73431B3-45B2-4509-880A-A0A4F3EA60F3} = {6EA58529-63C0-4D14-90D8-186B61E75DD6}
+		{2F0DEA83-4003-4413-A3B9-1DC971BEAF46} = {387FB650-9E76-41C8-AA2E-0FEA8A3AC69B}
+		{E000FEFF-C19F-4393-A063-8FECB7AF365F} = {387FB650-9E76-41C8-AA2E-0FEA8A3AC69B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC5529C9-3C56-41DE-94A8-85B1ED2E8990}
+	EndGlobalSection
+EndGlobal
