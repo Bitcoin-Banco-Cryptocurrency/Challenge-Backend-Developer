@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace BitCoinChallange.Domain.Kernel.Queries
 {
-	public abstract class PageQueryResult<TEntity> where TEntity : class
+	public abstract class PageQueryResult<TEntity> : Message where TEntity : class
 	{
 		public PageQueryResult(IQueryable<TEntity> items, string ordering)
 		{

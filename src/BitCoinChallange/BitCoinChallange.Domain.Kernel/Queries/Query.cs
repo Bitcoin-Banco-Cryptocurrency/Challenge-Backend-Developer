@@ -5,7 +5,7 @@ using System;
 
 namespace BitCoinChallange.Domain.Kernel.Queries
 {
-	public abstract class Query<TModel> : Message where TModel : class, IRequest<PageResponse<TModel>>
+	public abstract class Query : Message
 	{
 		public DateTime TimeQuery { get; private set; }
 

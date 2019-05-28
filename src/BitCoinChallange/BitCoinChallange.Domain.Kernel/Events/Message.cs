@@ -1,8 +1,16 @@
 ﻿using MediatR;
+using System;
 
 namespace BitCoinChallange.Domain.Kernel.Events
 {
-	public class Message : IRequest
+	public abstract class Message : IRequest<bool>
 	{
+		public string MessageType { get; protected set; }
+		public Guid AggregateId { get; protected set; }
+
+		protected Message()
+		{
+			MessageType = GetType().Name;
+		}
 	}
 }
