@@ -1,12 +1,8 @@
 ﻿using BancoBitcoin.Domain.Entity;
 using BancoBitcoin.Domain.Repository;
 using BancoBitcoin.Repository.Util;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace BancoBitcoin.Repository.Entity
 {
@@ -16,9 +12,7 @@ namespace BancoBitcoin.Repository.Entity
 
         public BookRepository()
         {
-            var jsonPath = AppDomain.CurrentDomain.BaseDirectory + "books.json";
-            string json = File.ReadAllText(jsonPath, Encoding.UTF8);
-            Books = JsonConvert.DeserializeObject<IList<Book>>(json);
+            Books = ReadJson.GetDeserializedObjectsFromJsonFile<IList<Book>>("books.json");
         }
 
         public IList<Book> GetBooks()
