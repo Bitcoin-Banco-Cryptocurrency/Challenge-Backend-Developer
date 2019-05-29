@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
-using BitCoinChallange.Domain.Kernel.Queries;
+﻿using BitCoinChallange.Domain.Kernel.Queries;
 using BitCoinChallange.Domain.Validations;
 using FluentValidation.Results;
 using MediatR;
+using System;
+using System.Collections.Generic;
 
 namespace BitCoinChallange.Domain.Queries
 {
@@ -10,9 +11,10 @@ namespace BitCoinChallange.Domain.Queries
 	{
 		public BookQueryRequest(string name, string ordering, BookSpecificationsRequest specifications)
 		{
+			AggregateId = Guid.NewGuid();
 			Name = name;
-			Ordering = ordering;
-			Specifications = specifications;
+			Ordering = ordering?.ToUpper();
+			Specifications = specifications ?? new BookSpecificationsRequest(string.Empty, string.Empty, 0, new List<string>(), new List<string>());
 		}
 
 		public string Name { get; private set; }

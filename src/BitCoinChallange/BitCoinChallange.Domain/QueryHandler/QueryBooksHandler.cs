@@ -39,6 +39,9 @@ namespace BitCoinChallange.Domain.QueryHandler
 
 			var filter = queryResponse.Where(w => new BookFilterSpec().IsSatisfiedBy(w, request)).Select(s => s);
 
+			if (request.Ordering == "ASC") filter = filter.OrderBy(o => o.Price);
+			if (request.Ordering == "DESC") filter = filter.OrderByDescending(o => o.Price);
+
 			return Task.FromResult(filter);
 		}
 	}

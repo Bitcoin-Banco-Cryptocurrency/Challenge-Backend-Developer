@@ -1,7 +1,5 @@
 ﻿using BitCoinChallange.Domain.Kernel.Events;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BitCoinChallange.Domain.Kernel.Notifications
 {
@@ -11,8 +9,11 @@ namespace BitCoinChallange.Domain.Kernel.Notifications
 
 		public string Value { get; private set; }
 
+		public Guid IdMassage { get; private set; }
+
 		public Notification(string key, string value)
 		{
+			IdMassage = Guid.NewGuid();
 			Key = key;
 			Value = value;
 		}

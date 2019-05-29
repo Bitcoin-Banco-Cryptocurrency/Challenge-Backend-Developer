@@ -9,10 +9,9 @@ namespace BitCoinChallange.Domain.Validations
 		protected void ValidateOrdering()
 		{
 			RuleFor(c => c.Ordering)
-				.NotEmpty()
-				.NotNull()
 				.Must((m, valid) => valid == "ASC" || valid == "DESC")
-				.WithMessage("Informe qual a forma de ordenação (ASC ou DESC)");
+				.When(w=> !string.IsNullOrEmpty(w.Ordering) && !string.IsNullOrWhiteSpace(w.Ordering))
+				.WithMessage("Informe qual a forma de ordenação (ASC ou DESC), a ordenação é feita por preço");
 		}
 
 	}

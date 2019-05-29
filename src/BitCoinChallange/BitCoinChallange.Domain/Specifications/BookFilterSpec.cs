@@ -1,6 +1,7 @@
 ﻿using BitCoinChallange.Domain.Kernel.Specifications;
 using BitCoinChallange.Domain.Queries;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -15,14 +16,13 @@ namespace BitCoinChallange.Domain.Specifications
 
 		private bool Rule(BookQueryResponse a, BookQueryRequest b)
 		{
-			var illustrator = b?.Specifications?.Illustrator;
-			var genre = b?.Specifications?.Genres;
+			var spec = b?.Specifications;
 
-			return (a.Name == b.Name) ||
-				   (a.Specifications.Author == b.Specifications?.Author) ||
-				   (illustrator != null ? a.Specifications.Illustrator.Any(any => illustrator.Contains(any)) : false) ||
-				   (a.Specifications.OriginallyPublished == b.Specifications?.OriginallyPublished) ||
-				   (genre != null ? a.Specifications.Genres.Any(w => genre.Contains(w)) : false);
+			return (!string.IsNullOrEmpty(b.Name) ? a.Name.Contains(b.Name) : false) ||
+				   (!string.IsNullOrEmpty(b.Specifications.Author) ? a.Specifications.Author.Contains(b.Specifications.Author) : false) ||
+				   (spec?.Illustrator != null ? spec.Illustrator.Any(any => a.Specifications.Illustrator.Contains(any)) : false) ||
+				   (!string.IsNullOrEmpty(spec.OriginallyPublished) ? a.Specifications.OriginallyPublished.Contains(spec.OriginallyPublished) : false) ||
+				   (spec?.Genres != null ? spec.Genres.Any(w => a.Specifications.Genres.Contains(w)) : false);
 		}
 	}
 }

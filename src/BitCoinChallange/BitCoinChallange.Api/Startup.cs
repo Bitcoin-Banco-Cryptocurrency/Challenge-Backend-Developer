@@ -10,14 +10,21 @@ using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
 using BitCoinChallange.Api.ApiConfigurations;
 using MediatR;
+using System;
 
 namespace BitCoinChallange.Api
 {
 	public class Startup
 	{
-		public Startup(IConfiguration configuration)
+		public Startup(IConfiguration configuration, IHostingEnvironment env)
 		{
 			Configuration = configuration;
+			var builder = new ConfigurationBuilder()
+				.SetBasePath(Directory.GetCurrentDirectory())
+				.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+				.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+			builder.AddEnvironmentVariables();
+			Configuration = builder.Build();
 		}
 
 		public IConfiguration Configuration { get; }
@@ -36,7 +43,7 @@ namespace BitCoinChallange.Api
 					Description = "BitCoinChallange API Documentation",
 					Contact = new Contact { Name = "Jefferson Moraes", Email = "JEFFERSON.MORAEAS26@GAIL.COM", Url = "https://github.com/Jeffsmoraes/Challenge-Backend-Developer/tree/development" }
 				});
-				var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+				var basePath = AppContext.BaseDirectory;
 				var xmlPath = Path.Combine(basePath, "BitCoinChallange.Api.xml");
 				s.IncludeXmlComments(xmlPath);
 			});
@@ -58,6 +65,7 @@ namespace BitCoinChallange.Api
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
 			}
+			app.UseStaticFiles();
 
 			app.UseSwagger();
 			app.UseSwaggerUI(s =>
