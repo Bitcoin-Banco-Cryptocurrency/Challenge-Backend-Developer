@@ -10,7 +10,9 @@ namespace BitCoinChallange.Infra.CrossCutting.MapperConfigs
 			return new MapperConfiguration(cfg =>
 			{
 				cfg.ShouldMapProperty = p => p.GetMethod.IsPublic || p.GetMethod.IsAssembly;
+				cfg.ShouldUseConstructor = ci => !ci.IsPrivate;
 				cfg.AddProfile(new DomainToViewModelMappingProfile());
+				cfg.AddProfile(new ViewModelToDomainMappingProfile());
 			});
 		}
 	}

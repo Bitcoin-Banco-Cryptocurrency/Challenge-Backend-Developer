@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using BitCoinChallange.Infra.CrossCutting.Ioc;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +8,8 @@ using Microsoft.Extensions.PlatformAbstractions;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
+using BitCoinChallange.Api.ApiConfigurations;
+using MediatR;
 
 namespace BitCoinChallange.Api
 {
@@ -38,6 +41,9 @@ namespace BitCoinChallange.Api
 				s.IncludeXmlComments(xmlPath);
 			});
 			services.AddMvc().AddJsonOptions(o => o.SerializerSettings.NullValueHandling = NullValueHandling.Ignore);
+			services.AddMediatR(typeof(Startup));
+			services.AddAutoMapperSetup();
+			RegisterServices(services);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +67,11 @@ namespace BitCoinChallange.Api
 
 			app.UseHttpsRedirection();
 			app.UseMvc();
+		}
+
+		private static void RegisterServices(IServiceCollection services)
+		{
+			InjectNative.RegisterServices(services);
 		}
 	}
 }

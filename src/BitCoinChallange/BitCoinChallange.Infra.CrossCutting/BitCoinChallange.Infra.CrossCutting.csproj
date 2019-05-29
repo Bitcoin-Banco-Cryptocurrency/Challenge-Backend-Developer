@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BitCoinChallange.Application\BitCoinChallange.Application.csproj" />
     <ProjectReference Include="..\BitCoinChallange.Domain.Kernel\BitCoinChallange.Domain.Kernel.csproj" />
+    <ProjectReference Include="..\BitCoinChallange.Domain\BitCoinChallange.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,12 +14,7 @@ namespace BitCoinChallange.Application.ViewModels
 		public string OriginallyPublished { get; set; }
 		public string Author { get; set; }
 		public int PageCount { get; set; }
-		public string Illustrator { get; set; }
-		public IList<GenresViewModel> Genres { get; set; }
-	}
-
-	public class GenresViewModel
-	{
-		public string Genre { get; set; }
+		public IEnumerable<string> Illustrator { get; set; }
+		public IEnumerable<string> Genres { get; set; }
 	}
 }

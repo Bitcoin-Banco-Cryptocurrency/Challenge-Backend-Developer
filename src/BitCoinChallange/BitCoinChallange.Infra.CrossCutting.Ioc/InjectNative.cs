@@ -1,7 +1,12 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using BitCoinChallange.Application.Interfaces;
+using BitCoinChallange.Application.QueryStack;
 using BitCoinChallange.Domain.Kernel.Handlers;
 using BitCoinChallange.Domain.Kernel.Mappers;
+using BitCoinChallange.Domain.Kernel.Notifications;
 using BitCoinChallange.Domain.Kernel.Queries;
+using BitCoinChallange.Domain.Queries;
+using BitCoinChallange.Domain.QueryHandler;
 using BitCoinChallange.Infra.CrossCutting.MapperConfigs;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,18 +18,17 @@ namespace BitCoinChallange.Infra.CrossCutting.Ioc
 		public static void RegisterServices(IServiceCollection services)
 		{
 			//automapper
-			services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
-			services.AddSingleton(Mapper.Configuration);
 			services.AddScoped<ICustomMapper, Mapping>();
 
 			//Application - query
-			services.AddScoped<IRequestHandler<Query<PageResponse<>>, PageResponse<>>, QueryBooksHandler>();
+			services.AddScoped<IBookQueryService, BookQueryService>();
+			services.AddScoped<IRequestHandler<BookQueryRequest, IEnumerable<BookQueryResponse>>, QueryBooksHandler>();
 
-			// Domain Bus (Mediator)
+			// memory Bus (Mediator)
 			services.AddScoped<IMediatorHandler, MediatorHandler>();
 
-			// Domain Specifications
-			//services.AddScoped<IInspecaoRules, InspecaoRules>();
+			//Kernel notifications
+			services.AddScoped<INotificationHandler<Notification>, NotificationHandler>();
 		}
 	}
 }

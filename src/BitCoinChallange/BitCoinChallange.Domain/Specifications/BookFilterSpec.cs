@@ -15,10 +15,14 @@ namespace BitCoinChallange.Domain.Specifications
 
 		private bool Rule(BookQueryResponse a, BookQueryRequest b)
 		{
-			return (a.Specifications.Author == b.Specifications.Author) ||
-				   (a.Specifications.Illustrator == b.Specifications.Illustrator) ||
-				   (a.Specifications.OriginallyPublished == b.Specifications.OriginallyPublished) ||
-				   (a.Specifications.Genres.Any(w => b.Specifications.Genres.Any(any => any.Contains(w))));
+			var illustrator = b?.Specifications?.Illustrator;
+			var genre = b?.Specifications?.Genres;
+
+			return (a.Name == b.Name) ||
+				   (a.Specifications.Author == b.Specifications?.Author) ||
+				   (illustrator != null ? a.Specifications.Illustrator.Any(any => illustrator.Contains(any)) : false) ||
+				   (a.Specifications.OriginallyPublished == b.Specifications?.OriginallyPublished) ||
+				   (genre != null ? a.Specifications.Genres.Any(w => genre.Contains(w)) : false);
 		}
 	}
 }

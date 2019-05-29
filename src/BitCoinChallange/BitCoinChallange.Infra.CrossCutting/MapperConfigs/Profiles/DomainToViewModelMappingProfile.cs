@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BitCoinChallange.Application.ViewModels;
+using BitCoinChallange.Domain.Queries;
 
 namespace BitCoinChallange.Infra.CrossCutting.MapperConfigs.Profiles
 {
@@ -6,7 +8,7 @@ namespace BitCoinChallange.Infra.CrossCutting.MapperConfigs.Profiles
 	{
 		public DomainToViewModelMappingProfile()
 		{
-			CreateMap<string, string>();
+			CreateMap<BookQueryResponse, BookResponseViewModel>();
 		}
 	}
 }

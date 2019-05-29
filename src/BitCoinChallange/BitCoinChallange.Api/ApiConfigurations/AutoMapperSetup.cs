@@ -18,7 +18,7 @@ namespace BitCoinChallange.Api.ApiConfigurations
 				throw new ArgumentNullException(nameof(services));
 			}
 			services.AddAutoMapper(typeof(Startup));
-			AutoMapperConfig.RegisterMappings();
+			//AutoMapperConfig.RegisterMappings();
 		}
 	}
 }

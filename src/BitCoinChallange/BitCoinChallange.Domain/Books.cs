@@ -1,7 +1,9 @@
 ﻿using BitCoinChallange.Domain.Queries;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.IO;
+
 
 namespace BitCoinChallange.Domain
 {
@@ -18,18 +20,21 @@ namespace BitCoinChallange.Domain
 			public static Books Create()
 			{
 				var json = ReadFileJson();
-				var result = JsonConvert.DeserializeObject<IEnumerable<BookQueryResponse>>(json);
+				var stringJson = JsonConvert.SerializeObject(json);
+				var result = JsonConvert.DeserializeObject<IEnumerable<BookQueryResponse>>(stringJson);
 				return new Books(result);
 			}
 
-			private static string ReadFileJson()
+			private static object ReadFileJson()
 			{
 				var path = Directory.GetCurrentDirectory();
 				var fullName = Path.Combine(path, "Books.json");
-				var jsonResult = string.Empty;
-				using (var r = new StreamReader(fullName))
+				object jsonResult = new { };
+				using (var json = File.OpenText(fullName))
 				{
-					jsonResult = r.ReadToEnd();
+					var serializer = new JsonSerializer();
+					object j = (object)serializer.Deserialize(json, typeof(object));
+					jsonResult = j;
 				}
 				return jsonResult;
 			}

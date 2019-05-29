@@ -1,15 +1,17 @@
-﻿using MediatR;
+﻿using BitCoinChallange.Domain.Kernel.Events;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace BitCoinChallange.Domain.Kernel.Queries
 {
-	public class PageResponse<T> : PageQueryResult<T> where T : class
+	public class PageResponse<T> : Message
 	{
-		public PageResponse(IEnumerable<T> items, string ordering) : base(items.AsQueryable(), ordering)
+		public PageResponse(IEnumerable<T> items)
 		{
-			this.Ordering = ordering;
+			Data = items?.ToList();
 		}
-		public string Ordering { get; set; }
+		public IReadOnlyList<T> Data { get; }
 	}
 }

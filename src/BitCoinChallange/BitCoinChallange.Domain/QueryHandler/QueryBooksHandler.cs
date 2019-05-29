@@ -5,7 +5,6 @@ using BitCoinChallange.Domain.Kernel.Queries;
 using BitCoinChallange.Domain.Queries;
 using BitCoinChallange.Domain.QueryHandler.Common;
 using BitCoinChallange.Domain.Specifications;
-using FluentValidation.Results;
 using MediatR;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace BitCoinChallange.Domain.QueryHandler
 {
-	public class QueryBooksHandler : BaseQueryHandler, IRequestHandler<BookQueryRequest, PageResponse<BookQueryResponse>>
+	public class QueryBooksHandler : BaseQueryHandler, IRequestHandler<BookQueryRequest, IEnumerable<BookQueryResponse>>
 	{
 		private readonly ICustomMapper _mapper;
 		private readonly IMediatorHandler _memoryBus;
@@ -27,21 +26,20 @@ namespace BitCoinChallange.Domain.QueryHandler
 			_notifications = notifications;
 		}
 
-		public Task<PageResponse<BookQueryResponse>> Handle(BookQueryRequest request, CancellationToken cancellationToken)
+		public Task<IEnumerable<BookQueryResponse>> Handle(BookQueryRequest request, CancellationToken cancellationToken)
 		{
-			request.ValidationResult = new ValidationResult();
-
 			if (!request.IsValid())
 			{
 				NotifyValidationErrors(request);
-				return null;
+				return Task.FromResult(default(IEnumerable<BookQueryResponse>));
 			}
-			var spec = new BookFilterSpec();
+
 			var books = Books.FactoryBookJson.Create();
 			var queryResponse = _mapper.Custom.Map<List<BookQueryResponse>>(books.Items);
-			var filter = queryResponse.Where(w => spec.IsSatisfiedBy(w, request));
 
-			return Task.FromResult(new PageResponse<BookQueryResponse>(filter, request.Ordering));
+			var filter = queryResponse.Where(w => new BookFilterSpec().IsSatisfiedBy(w, request)).Select(s => s);
+
+			return Task.FromResult(filter);
 		}
 	}
 }

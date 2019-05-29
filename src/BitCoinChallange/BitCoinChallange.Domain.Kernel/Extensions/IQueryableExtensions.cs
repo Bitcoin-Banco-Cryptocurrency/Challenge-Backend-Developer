@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
-using System.Linq.Dynamic.Core.Exceptions;
 
 namespace BitCoinChallange.Domain.Kernel.Extensions
 {
@@ -12,12 +10,12 @@ namespace BitCoinChallange.Domain.Kernel.Extensions
 		{
 			if (source == null)
 			{
-				throw new ArgumentNullException("source");
+				return default(IQueryable<T>);
 			}
 
 			if (string.IsNullOrEmpty(ordering))
 			{
-				throw new ArgumentNullException("ordering");
+				return source;
 			}
 
 			source = source.OrderBy(ordering);

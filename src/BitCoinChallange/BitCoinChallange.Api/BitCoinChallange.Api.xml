@@ -4,5 +4,11 @@
         <name>BitCoinChallange.Api</name>
     </assembly>
     <members>
+        <member name="T:BitCoinChallange.Api.ApiConfigurations.AutoMapperSetup">
+            <summary>
+            Classe stática de inicialização do automapper e profiles.
+            este objeto precisa ser adicionado na startup da api.
+            </summary>
+        </member>
     </members>
 </doc>

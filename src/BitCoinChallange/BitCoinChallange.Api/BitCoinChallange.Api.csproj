@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.1.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
     <PackageReference Include="MediatR" Version="7.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
@@ -23,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BitCoinChallange.Application\BitCoinChallange.Application.csproj" />
     <ProjectReference Include="..\BitCoinChallange.Infra.CrossCutting.Ioc\BitCoinChallange.Infra.CrossCutting.Ioc.csproj" />
     <ProjectReference Include="..\BitCoinChallange.Infra.CrossCutting\BitCoinChallange.Infra.CrossCutting.csproj" />
   </ItemGroup>
