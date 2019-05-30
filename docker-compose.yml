@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  bitcoinbancodevtest:
+    image: ${DOCKER_REGISTRY-}bitcoinbancodevtest
+    build:
+      context: .
+      dockerfile: BitCoinBancoDevTest\Dockerfile
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+      
+  redis:
+    image: redis
+    ports:
+      - "16379:6379"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+
+networks:
+  vpcbr:
+    ipam:
+     config:
+       - subnet: 10.5.0.0/16
