@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace BancoBitcoin.Repository.Util
+namespace BancoBitcoin.Application.Util
 {
     public static class PredicateBuilder
     {

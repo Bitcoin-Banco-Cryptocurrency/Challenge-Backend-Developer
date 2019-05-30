@@ -1,4 +1,5 @@
 ﻿using BancoBitcoin.Domain.Entity;
+using System;
 using System.Collections.Generic;
 
 namespace BancoBitcoin.Domain.Repository
@@ -7,8 +8,6 @@ namespace BancoBitcoin.Domain.Repository
     {
         IList<Book> GetBooks();
 
-        IList<Book> GetBooksBy(int id, string name, decimal price, bool order);
-
-        IList<Book> GetBooksBy(string originallyPublished, string author, int pageCount, bool order);
+        IList<Book> GetBooksBy(Func<Book, bool> predicate, bool order);
     }
 }
