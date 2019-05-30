@@ -1,0 +1,12 @@
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\bin\Debug\netcoreapp2.1\GestorContabil.Aplicacao.deps.json
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\bin\Debug\netcoreapp2.1\GestorContabil.Aplicacao.dll
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\bin\Debug\netcoreapp2.1\GestorContabil.Aplicacao.pdb
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\bin\Debug\netcoreapp2.1\GestorContabil.Dominio.dll
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\bin\Debug\netcoreapp2.1\GestorContabil.Dominio.pdb
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.csprojAssemblyReference.cache
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.csproj.CoreCompileInputs.cache
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.AssemblyInfoInputs.cache
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.AssemblyInfo.cs
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.csproj.CopyComplete
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.dll
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Aplicacao\obj\Debug\netcoreapp2.1\GestorContabil.Aplicacao.pdb

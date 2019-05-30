@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitCoin.Domain", "src\BancoBitCoin.Domain\BancoBitCoin.Domain.csproj", "{4112494B-A032-4835-93B3-DE492677E604}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitCoin.Infrastructure.Data", "src\BancoBitCoin.Infrastructure.Data\BancoBitCoin.Infrastructure.Data.csproj", "{1394116B-EA3C-4DC8-9403-26A3147A450F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitCoin.Application", "src\BancoBitCoin.Application\BancoBitCoin.Application.csproj", "{9503B719-6B53-417D-A05F-88B8BA8A519D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitCoin.API", "src\BancoBitCoin.API\BancoBitCoin.API.csproj", "{9ED44728-EFB0-4C5A-90B4-C51276C4A9C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitCoin.IoC", "src\BancoBitCoin.IoC\BancoBitCoin.IoC.csproj", "{1677D924-9DA6-4FC8-ADA5-01708F7B213C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoBitCoin.Test", "src\BancoBitCoin.Test\BancoBitCoin.Test.csproj", "{2596605D-4B2B-4A30-90D5-161667D072D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4112494B-A032-4835-93B3-DE492677E604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4112494B-A032-4835-93B3-DE492677E604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4112494B-A032-4835-93B3-DE492677E604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4112494B-A032-4835-93B3-DE492677E604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1394116B-EA3C-4DC8-9403-26A3147A450F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1394116B-EA3C-4DC8-9403-26A3147A450F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1394116B-EA3C-4DC8-9403-26A3147A450F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1394116B-EA3C-4DC8-9403-26A3147A450F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9503B719-6B53-417D-A05F-88B8BA8A519D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9503B719-6B53-417D-A05F-88B8BA8A519D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9503B719-6B53-417D-A05F-88B8BA8A519D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9503B719-6B53-417D-A05F-88B8BA8A519D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED44728-EFB0-4C5A-90B4-C51276C4A9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED44728-EFB0-4C5A-90B4-C51276C4A9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED44728-EFB0-4C5A-90B4-C51276C4A9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED44728-EFB0-4C5A-90B4-C51276C4A9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1677D924-9DA6-4FC8-ADA5-01708F7B213C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1677D924-9DA6-4FC8-ADA5-01708F7B213C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1677D924-9DA6-4FC8-ADA5-01708F7B213C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1677D924-9DA6-4FC8-ADA5-01708F7B213C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2596605D-4B2B-4A30-90D5-161667D072D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2596605D-4B2B-4A30-90D5-161667D072D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2596605D-4B2B-4A30-90D5-161667D072D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2596605D-4B2B-4A30-90D5-161667D072D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C7AD1F6-23C1-4155-B498-585F5E47D82E}
+	EndGlobalSection
+EndGlobal

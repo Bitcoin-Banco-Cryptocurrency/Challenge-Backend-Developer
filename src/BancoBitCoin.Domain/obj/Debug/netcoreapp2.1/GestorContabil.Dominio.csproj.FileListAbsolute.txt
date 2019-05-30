@@ -1,0 +1,8 @@
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\bin\Debug\netcoreapp2.1\GestorContabil.Dominio.deps.json
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\bin\Debug\netcoreapp2.1\GestorContabil.Dominio.dll
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\bin\Debug\netcoreapp2.1\GestorContabil.Dominio.pdb
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\obj\Debug\netcoreapp2.1\GestorContabil.Dominio.csproj.CoreCompileInputs.cache
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\obj\Debug\netcoreapp2.1\GestorContabil.Dominio.AssemblyInfoInputs.cache
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\obj\Debug\netcoreapp2.1\GestorContabil.Dominio.AssemblyInfo.cs
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\obj\Debug\netcoreapp2.1\GestorContabil.Dominio.dll
+C:\GestorContabil\back-end\GestorContabil\GestorContabil.Dominio\obj\Debug\netcoreapp2.1\GestorContabil.Dominio.pdb

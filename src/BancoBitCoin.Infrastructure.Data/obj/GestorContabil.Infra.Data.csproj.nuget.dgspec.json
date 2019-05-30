@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Infra.Data\\GestorContabil.Infra.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Dominio\\GestorContabil.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Dominio\\GestorContabil.Dominio.csproj",
+        "projectName": "GestorContabil.Dominio",
+        "projectPath": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Dominio\\GestorContabil.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Reinaldo\\.nuget\\packages\\",
+        "outputPath": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Reinaldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Infra.Data\\GestorContabil.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Infra.Data\\GestorContabil.Infra.Data.csproj",
+        "projectName": "GestorContabil.Infra.Data",
+        "projectPath": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Infra.Data\\GestorContabil.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Reinaldo\\.nuget\\packages\\",
+        "outputPath": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Reinaldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Dominio\\GestorContabil.Dominio.csproj": {
+                "projectPath": "C:\\GestorContabil\\back-end\\GestorContabil\\GestorContabil.Dominio\\GestorContabil.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.60.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

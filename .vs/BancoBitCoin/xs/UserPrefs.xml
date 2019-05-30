@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{9ED44728-EFB0-4C5A-90B4-C51276C4A9C3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/BancoBitCoin.Domain/Dtos/BookRequest.cs">
+    <Files>
+      <File FileName="src/BancoBitCoin.API/Controllers/BooksController.cs" Line="16" Column="42" />
+      <File FileName="src/BancoBitCoin.Application/Service/BookAppService.cs" Line="30" Column="1" />
+      <File FileName="src/BancoBitCoin.Domain/Dtos/BookRequest.cs" Line="6" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BancoBitCoin" expanded="True">
+            <Node name="BancoBitCoin.Application" expanded="True">
+              <Node name="Service" expanded="True" />
+            </Node>
+            <Node name="BancoBitCoin.Domain" expanded="True">
+              <Node name="Dtos" expanded="True">
+                <Node name="BookRequest.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="BancoBitCoin" expanded="True" selected="True">
+            <Node name="BancoBitCoin.Test" expanded="True">
+              <Node name="Tests" expanded="True">
+                <Node name="BookAppServiceTest" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BancoBitCoin.API PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
