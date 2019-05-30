@@ -4,6 +4,28 @@
   </a>
 </p>
 
+## How to run this project?
+
+### By Automated Testing
+- Just open the solution file in visual studio and run the tests from Test Explorer Window 
+- Or, by command line, navigate at the root folder of this app and run the following command
+```
+dotnet test
+```
+
+As simple as that
+
+### By Manual Testing
+- Open the solution file in visual studio and run the project by pressing F5 shortcut. It will open a browser with a list of books. You can use the OrderBy param as ASC(default) or DESC. Also, you can filter the collection using ```Name``` and/or ```Author``` params
+
+- Or, by command line, navigate at the root folder of this app and run the following command
+```
+dotnet run
+```
+
+I hope you enjoy this very simple implementation!
+
+
 ## Challenge for Developer
 
 ### Developer Level
@@ -29,7 +51,7 @@ Remember that at the time of the evaluation we will look at:
 - Maintenance;
 - Version control knowledge;
 - Unit Test;
-- Design Pattern;
+- Design Pattern; 
 
 To send us your code, you must:
 
