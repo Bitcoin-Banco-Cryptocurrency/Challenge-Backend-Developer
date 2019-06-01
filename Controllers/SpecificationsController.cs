@@ -5,26 +5,30 @@ using Microsoft.EntityFrameworkCore;
 using Products.Data;
 using Products.Models;
 
+
 namespace Products.Controllers
 {
-    public class SpecificationController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SpecificationsController : ControllerBase
     {
         private readonly DataContext _context;
 
-        public SpecificationController(DataContext context)
+        public SpecificationsController(DataContext context)
         {
             _context = context;
         }
 
-        [Route("v1/specifications")]
+       
         [HttpGet]
-        [ResponseCache(Duration = 3600)]
+        // GET api/specifications
+       
         public IEnumerable<Specification> Get()
         {
             return _context.Specifications.AsNoTracking().ToList();
         }
 
-        [Route("v1/specifications/{id}")]
+        [Route("specification/{id}")]
         [HttpGet]
         public Specification Get(int id)
         {
@@ -32,7 +36,7 @@ namespace Products.Controllers
             return _context.Specifications.AsNoTracking().Where(x => x.ID == id).FirstOrDefault();
         }
 
-        [Route("v1/specifications/{id}/products")]
+        [Route("specification/{id}/products")]
         [HttpGet]
         [ResponseCache(Duration = 30)]
         public IEnumerable<Product> GetProducts(int id)
@@ -40,7 +44,7 @@ namespace Products.Controllers
             return _context.Products.AsNoTracking().Where(x => x.SpecificationId == id).ToList();
         }
 
-        [Route("v1/specifications")]
+        [Route("specification")]
         [HttpPost]
         public Specification Post([FromBody]Specification specification)
         {
@@ -50,7 +54,7 @@ namespace Products.Controllers
             return specification;
         }
 
-        [Route("v1/specifications")]
+        [Route("specification")]
         [HttpPut]
         public Specification Put([FromBody]Specification specification)
         {
@@ -60,7 +64,7 @@ namespace Products.Controllers
             return specification;
         }
 
-        [Route("v1/specifications")]
+        [Route("specification")]
         [HttpDelete]
         public Specification Delete([FromBody]Specification specification)
         {

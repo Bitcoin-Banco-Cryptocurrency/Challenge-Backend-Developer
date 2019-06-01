@@ -43,10 +43,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "JsonNet.PrivateSettersContractResolvers": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -75,10 +71,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
-            },
-            "PrivateSetterContractResolver": {
-              "target": "Package",
-              "version": "[2.1.0, )"
             }
           },
           "imports": [

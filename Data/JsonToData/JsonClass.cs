@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using JsonNet.PrivateSettersContractResolvers;
 
 namespace Products.Data.JsonToData
 {

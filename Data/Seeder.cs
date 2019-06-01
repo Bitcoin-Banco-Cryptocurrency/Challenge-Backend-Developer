@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using JsonNet.PrivateSettersContractResolvers;
 using Products.Data.JsonToData;
-using Products.Data;
 using Products.Models;
+using Products.Data;
 
 public static class Seeder
 {

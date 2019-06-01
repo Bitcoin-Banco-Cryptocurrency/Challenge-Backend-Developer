@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "e9fbf8e9030bf4d8f30c5438fa8b9d7d95f7e99f"
+    "signature": "46d79e298d4a8f44f73dad647add94bcdaa22e50"
   },
   "compilationOptions": {
     "defines": [
@@ -24,34 +24,18 @@
     ".NETCoreApp,Version=v2.2": {
       "Products/1.0.0": {
         "dependencies": {
-          "JsonNet.PrivateSettersContractResolvers": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.4",
           "Microsoft.NETCore.App": "2.2.0",
-          "Newtonsoft.Json": "12.0.2",
-          "PrivateSetterContractResolver": "2.1.0"
-        },
-        "runtime": {
-          "Products.dll": {}
-        },
-        "compile": {
-          "Products.dll": {}
-        }
-      },
-      "JsonNet.PrivateSettersContractResolvers/1.0.0": {
-        "dependencies": {
           "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
-          "lib/netstandard2.0/JsonNet.PrivateSettersContractResolvers.dll": {
-            "assemblyVersion": "1.0.0.2",
-            "fileVersion": "1.0.0.2"
-          }
+          "Products.dll": {}
         },
         "compile": {
-          "lib/netstandard2.0/JsonNet.PrivateSettersContractResolvers.dll": {}
+          "Products.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/2.2.4": {
@@ -98,20 +82,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "PrivateSetterContractResolver/2.1.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.2"
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        },
-        "compile": {
-          "lib/netcoreapp2.0/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -3290,13 +3260,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "JsonNet.PrivateSettersContractResolvers/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-B9KNPVez9v/qWHxNjCMcMVMcstQMM/KLrXop9NPa9tzrU9hSasPNFaSETofo5GrLKQ1NHzDHcHR9Be4FPcfeNg==",
-      "path": "jsonnet.privatesetterscontractresolvers/1.0.0",
-      "hashPath": "jsonnet.privatesetterscontractresolvers.1.0.0.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore/2.2.4": {
       "type": "package",
       "serviceable": true,
@@ -3324,13 +3287,6 @@
       "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "path": "newtonsoft.json/12.0.2",
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
-    },
-    "PrivateSetterContractResolver/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6qf/uN19qP0RsNiJVczzFxO13OB+hiphCT194a1BOUB3mN6AkBifQ4S8vwO9TLSre/VXMGbwV4QQKEaXJdUg/g==",
-      "path": "privatesettercontractresolver/2.1.0",
-      "hashPath": "privatesettercontractresolver.2.1.0.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",

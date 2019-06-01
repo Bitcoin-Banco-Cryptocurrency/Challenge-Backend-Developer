@@ -2,18 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "JsonNet.PrivateSettersContractResolvers/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/JsonNet.PrivateSettersContractResolvers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/JsonNet.PrivateSettersContractResolvers.dll": {}
-        }
-      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2758,18 +2746,6 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "PrivateSetterContractResolver/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll": {}
-        }
-      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4466,19 +4442,6 @@
     }
   },
   "libraries": {
-    "JsonNet.PrivateSettersContractResolvers/1.0.0": {
-      "sha512": "B9KNPVez9v/qWHxNjCMcMVMcstQMM/KLrXop9NPa9tzrU9hSasPNFaSETofo5GrLKQ1NHzDHcHR9Be4FPcfeNg==",
-      "type": "package",
-      "path": "jsonnet.privatesetterscontractresolvers/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "jsonnet.privatesetterscontractresolvers.1.0.0.nupkg.sha512",
-        "jsonnet.privatesetterscontractresolvers.nuspec",
-        "lib/netstandard1.3/JsonNet.PrivateSettersContractResolvers.dll",
-        "lib/netstandard2.0/JsonNet.PrivateSettersContractResolvers.dll"
-      ]
-    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -7415,20 +7378,6 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
-      ]
-    },
-    "PrivateSetterContractResolver/2.1.0": {
-      "sha512": "6qf/uN19qP0RsNiJVczzFxO13OB+hiphCT194a1BOUB3mN6AkBifQ4S8vwO9TLSre/VXMGbwV4QQKEaXJdUg/g==",
-      "type": "package",
-      "path": "privatesettercontractresolver/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll",
-        "lib/netcoreapp2.0/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.Serialization.PrivateSetterContractResolver.dll",
-        "privatesettercontractresolver.2.1.0.nupkg.sha512",
-        "privatesettercontractresolver.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -12120,14 +12069,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "JsonNet.PrivateSettersContractResolvers >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Newtonsoft.Json >= 12.0.2",
-      "PrivateSetterContractResolver >= 2.1.0"
+      "Newtonsoft.Json >= 12.0.2"
     ]
   },
   "packageFolders": {
@@ -12174,10 +12121,6 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
-          "JsonNet.PrivateSettersContractResolvers": {
-            "target": "Package",
-            "version": "[1.0.0, )"
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12206,10 +12149,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.2, )"
-          },
-          "PrivateSetterContractResolver": {
-            "target": "Package",
-            "version": "[2.1.0, )"
           }
         },
         "imports": [
