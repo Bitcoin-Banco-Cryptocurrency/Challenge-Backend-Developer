@@ -12,3 +12,17 @@ C:\Projetos\Products\bin\Debug\netcoreapp2.2\Products.pdb
 C:\Projetos\Products\obj\Debug\netcoreapp2.2\Products.RazorTargetAssemblyInfo.cache
 C:\Projetos\Products\obj\Debug\netcoreapp2.2\Products.dll
 C:\Projetos\Products\obj\Debug\netcoreapp2.2\Products.pdb
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\bin\Debug\netcoreapp2.2\Products.deps.json
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\bin\Debug\netcoreapp2.2\Products.runtimeconfig.json
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\bin\Debug\netcoreapp2.2\Products.runtimeconfig.dev.json
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\bin\Debug\netcoreapp2.2\Products.dll
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\bin\Debug\netcoreapp2.2\Products.pdb
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.csprojAssemblyReference.cache
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.csproj.CoreCompileInputs.cache
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.RazorAssemblyInfo.cache
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.RazorAssemblyInfo.cs
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.AssemblyInfoInputs.cache
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.AssemblyInfo.cs
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.RazorTargetAssemblyInfo.cache
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.dll
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\obj\Debug\netcoreapp2.2\Products.pdb

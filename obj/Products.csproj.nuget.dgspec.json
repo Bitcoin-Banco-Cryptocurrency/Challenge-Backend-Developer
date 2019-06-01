@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Products\\Products.csproj": {}
+    "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Products\\Products.csproj": {
+    "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Products\\Products.csproj",
+        "projectUniqueName": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products.csproj",
         "projectName": "Products",
-        "projectPath": "C:\\Projetos\\Products\\Products.csproj",
+        "projectPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products.csproj",
         "packagesPath": "C:\\Users\\BOMBA\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Products\\obj\\",
+        "outputPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,11 +43,19 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "JsonNet.PrivateSettersContractResolvers": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
@@ -63,6 +71,14 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "PrivateSetterContractResolver": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             }
           },
           "imports": [

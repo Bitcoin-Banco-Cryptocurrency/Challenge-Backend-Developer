@@ -10,7 +10,7 @@ using Products.Data;
 namespace Products.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190531031438_initial")]
+    [Migration("20190601035138_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,9 +23,7 @@ namespace Products.Migrations
 
             modelBuilder.Entity("Products.Models.Product", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("ID");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -46,21 +44,9 @@ namespace Products.Migrations
 
             modelBuilder.Entity("Products.Models.Specification", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("ID");
 
                     b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("varchar(1024)")
-                        .HasMaxLength(1024);
-
-                    b.Property<string>("Genres")
-                        .IsRequired()
-                        .HasColumnType("varchar(1024)")
-                        .HasMaxLength(1024);
-
-                    b.Property<string>("Illustrators")
                         .IsRequired()
                         .HasColumnType("varchar(1024)")
                         .HasMaxLength(1024);
@@ -68,6 +54,12 @@ namespace Products.Migrations
                     b.Property<int>("PageCount");
 
                     b.Property<DateTime>("Published");
+
+                    b.Property<string>("_genres")
+                        .HasColumnName("Genres");
+
+                    b.Property<string>("_illustrators")
+                        .HasColumnName("Illustrator");
 
                     b.HasKey("ID");
 

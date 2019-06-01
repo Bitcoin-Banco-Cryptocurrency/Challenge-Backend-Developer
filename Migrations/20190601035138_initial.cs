@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Products.Migrations
@@ -12,13 +11,12 @@ namespace Products.Migrations
                 name: "Specification",
                 columns: table => new
                 {
-                    ID = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ID = table.Column<int>(nullable: false),
+                    Genres = table.Column<string>(nullable: true),
+                    Illustrator = table.Column<string>(nullable: true),
                     Published = table.Column<DateTime>(nullable: false),
                     Author = table.Column<string>(type: "varchar(1024)", maxLength: 1024, nullable: false),
-                    PageCount = table.Column<int>(nullable: false),
-                    Genres = table.Column<string>(type: "varchar(1024)", maxLength: 1024, nullable: false),
-                    Illustrators = table.Column<string>(type: "varchar(1024)", maxLength: 1024, nullable: false)
+                    PageCount = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,8 +27,7 @@ namespace Products.Migrations
                 name: "Product",
                 columns: table => new
                 {
-                    ID = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ID = table.Column<int>(nullable: false),
                     Name = table.Column<string>(type: "varchar(1024)", maxLength: 1024, nullable: false),
                     Price = table.Column<decimal>(type: "money", nullable: false),
                     SpecificationId = table.Column<int>(nullable: false)
