@@ -8,7 +8,6 @@ using Products.Models;
 
 namespace Products.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class SpecificationsController : ControllerBase
     {
@@ -22,13 +21,13 @@ namespace Products.Controllers
        
         [HttpGet]
         // GET api/specifications
-       
+        [Route("v1/specifications")]
         public IEnumerable<Specification> Get()
         {
             return _context.Specifications.AsNoTracking().ToList();
         }
 
-        [Route("specification/{id}")]
+        [Route("v1/specification/{id}")]
         [HttpGet]
         public Specification Get(int id)
         {
@@ -36,15 +35,18 @@ namespace Products.Controllers
             return _context.Specifications.AsNoTracking().Where(x => x.ID == id).FirstOrDefault();
         }
 
-        [Route("specification/{id}/products")]
+        [Route("v1/specification/{id}/products")]
         [HttpGet]
         [ResponseCache(Duration = 30)]
         public IEnumerable<Product> GetProducts(int id)
         {
-            return _context.Products.AsNoTracking().Where(x => x.SpecificationId == id).ToList();
+            //return _context.Products.AsNoTracking().Where(x => x.SpecificationId == id).ToList();
+            return _context.Products.Include(spec => spec.Specification)
+                .Where(x => x.SpecificationId == id)
+                .ToList();
         }
 
-        [Route("specification")]
+        [Route("v1/specification")]
         [HttpPost]
         public Specification Post([FromBody]Specification specification)
         {
@@ -54,7 +56,7 @@ namespace Products.Controllers
             return specification;
         }
 
-        [Route("specification")]
+        [Route("v1/specification")]
         [HttpPut]
         public Specification Put([FromBody]Specification specification)
         {
@@ -64,7 +66,7 @@ namespace Products.Controllers
             return specification;
         }
 
-        [Route("specification")]
+        [Route("v1/specification")]
         [HttpDelete]
         public Specification Delete([FromBody]Specification specification)
         {

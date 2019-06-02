@@ -10,7 +10,7 @@ using Products.Data;
 namespace Products.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190601035138_initial")]
+    [Migration("20190602033757_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,8 @@ namespace Products.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("SpecificationId");
+                    b.HasIndex("SpecificationId")
+                        .IsUnique();
 
                     b.ToTable("Product");
                 });
@@ -69,8 +70,8 @@ namespace Products.Migrations
             modelBuilder.Entity("Products.Models.Product", b =>
                 {
                     b.HasOne("Products.Models.Specification", "Specification")
-                        .WithMany("Products")
-                        .HasForeignKey("SpecificationId")
+                        .WithOne("Product")
+                        .HasForeignKey("Products.Models.Product", "SpecificationId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

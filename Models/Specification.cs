@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 using System.Globalization;
 using Newtonsoft.Json.Converters;
@@ -15,6 +16,8 @@ namespace Products.Models
         internal string _illustrators { get; set; }
 
         [JsonProperty(PropertyName = "id")]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [JsonProperty(PropertyName = "Published")]
@@ -41,6 +44,6 @@ namespace Products.Models
             set { _illustrators = JsonConvert.SerializeObject(value); }
         }
         [JsonIgnore]
-        public IEnumerable<Product> Products { get; set; }
+        public Product Product { get; set; }
     }
 }

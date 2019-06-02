@@ -13,7 +13,7 @@ namespace Products.Data.Maps
             builder.HasKey(x => x.ID);
             builder.Property(x => x.Name).IsRequired().HasMaxLength(1024).HasColumnType("varchar(1024)");
             builder.Property(x => x.Price).IsRequired().HasColumnType("money");
-            builder.HasOne(x => x.Specification).WithMany(x => x.Products);
+            builder.HasOne(x => x.Specification).WithOne(x => x.Product);
         }
     }
 }

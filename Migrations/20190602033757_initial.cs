@@ -46,7 +46,8 @@ namespace Products.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Product_SpecificationId",
                 table: "Product",
-                column: "SpecificationId");
+                column: "SpecificationId",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
