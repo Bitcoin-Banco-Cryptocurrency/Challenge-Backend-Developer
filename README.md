@@ -35,7 +35,7 @@ To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
 
--- Detalhes da Implementaçãp
+### Detalhes da Implementação
 
 1. Para a implementação deste desafio utilizei as seguintes ferramentas:
 1.1. Visual Studio Code
