@@ -37,21 +37,21 @@ Make a fork of this repository, and send us a pull-request.
 
 ### Detalhes da Implementação
 
-1. Para a implementação deste desafio utilizei as seguintes ferramentas:
-1.1. Visual Studio Code
-1.2. Docker com SQL Server instalado - Kitematic UI
-1.3. Azure Data Studio - Gerenciamento do SQL
-1.4. GitHub
-1.5. PostMan e Swagger para os testes na API
+- 1. Para a implementação deste desafio utilizei as seguintes ferramentas:
+- 1.1. Visual Studio Code
+- 1.2. Docker com SQL Server instalado - Kitematic UI
+- 1.3. Azure Data Studio - Gerenciamento do SQL
+- 1.4. GitHub
+- 1.5. PostMan e Swagger para os testes na API
 
-2. Tecnologias:
-2.1. .Net Core 2.2
-2.2. Padrões:
- 2.2.1 Repository Pattern
- 2.2.2 Fluent API (Objects Model > Mapping)
- 2.2.3 Cash e Compressão
-2.3. Documentação com Swagger
+- 2. Tecnologias:
+- 2.1. .Net Core 2.2
+- 2.2. Padrões:
+- 2.2.1 Repository Pattern
+- 2.2.2 Fluent API (Objects Model > Mapping)
+- 2.2.3 Cash e Compressão
+- 2.3. Documentação com Swagger
 
-3. Resumo da implementação
-3.1 Mecanismo de leitura do arquivo book.json e armazenamento no banco
-3.2 Controllers para Products e Specifications
+- 3. Resumo da implementação
+- 3.1 Mecanismo de leitura do arquivo book.json e armazenamento no banco
+- 3.2 Controllers para Products e Specifications
