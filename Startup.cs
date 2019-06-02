@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Products.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Products.Repositories;
 
 namespace Products
 {
@@ -26,6 +27,7 @@ namespace Products
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddScoped<DataContext, DataContext>();
+            services.AddTransient<ProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
