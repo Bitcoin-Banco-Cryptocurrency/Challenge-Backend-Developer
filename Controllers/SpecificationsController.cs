@@ -22,12 +22,14 @@ namespace Products.Controllers
         [HttpGet]
         // GET api/specifications
         [Route("v1/specifications")]
+         [ResponseCache(Duration = 120)]
         public IEnumerable<Specification> Get()
         {
             return _context.Specifications.AsNoTracking().ToList();
         }
 
         [Route("v1/specification/{id}")]
+         [ResponseCache(Duration = 120)]
         [HttpGet]
         public Specification Get(int id)
         {
@@ -36,8 +38,8 @@ namespace Products.Controllers
         }
 
         [Route("v1/specification/{id}/products")]
+         [ResponseCache(Duration = 120)]
         [HttpGet]
-        [ResponseCache(Duration = 30)]
         public IEnumerable<Product> GetProducts(int id)
         {
             //return _context.Products.AsNoTracking().Where(x => x.SpecificationId == id).ToList();

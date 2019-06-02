@@ -22,6 +22,7 @@ namespace Products.Controllers
         [HttpPost]
         // POST api/products/search
         [Route("v1/products/search")]
+        [ResponseCache(Duration = 120)]
         public IEnumerable<Product> Get([FromBody]UrlQuery urlQuery)
         {
             return _repository.Get(urlQuery);
@@ -30,6 +31,7 @@ namespace Products.Controllers
         [HttpGet]
         // GET api/products
         [Route("v1/products")]
+        [ResponseCache(Duration = 120)]
         public IEnumerable<Product> Get()
         {
             return _repository.Get();
@@ -38,12 +40,14 @@ namespace Products.Controllers
         [HttpGet]
         // GET api/products
         [Route("v1/products/{typeOrder}")]
+        [ResponseCache(Duration = 120)]
         public IEnumerable<Product> Get(string typeOrder)
         {
             return _repository.Get(typeOrder);
         }
 
         [Route("v1/product/{id}")]
+        [ResponseCache(Duration = 120)]
         [HttpGet]
         public Product Get(int id)
         {

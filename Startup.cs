@@ -25,6 +25,8 @@ namespace Products
             services.AddScoped<DataContext, DataContext>();
             services.AddTransient<ProductRepository, ProductRepository>();
 
+            services.AddResponseCompression();
+
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
@@ -47,20 +49,16 @@ namespace Products
                 // production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseMvc();
+            app.UseHttpsRedirection();
+            app.UseResponseCompression();
+            Seeder.Seedit(app.ApplicationServices);
 
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
-            // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "BitCoin Banco - API v1");
             });
-
-            app.UseHttpsRedirection();
-            Seeder.Seedit(app.ApplicationServices);
-            app.UseMvc();
         }
     }
 }
