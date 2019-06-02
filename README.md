@@ -39,7 +39,7 @@ Make a fork of this repository, and send us a pull-request.
 
 ### Detalhes da Implementação
 
-Para a implementação deste desafio utilizei as seguintes ferramentas:
+- Para a implementação deste desafio utilizei as seguintes ferramentas:
 
 - 1 Para a implementação deste desafio utilizei as seguintes ferramentas:
 	- 1.1. Visual Studio Code
