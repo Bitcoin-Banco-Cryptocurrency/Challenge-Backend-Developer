@@ -35,6 +35,8 @@ To send us your code, you must:
 
 Make a fork of this repository, and send us a pull-request.
 
+## Observações do Autor
+
 ### Detalhes da Implementação
 
 Para a implementação deste desafio utilizei as seguintes ferramentas:
