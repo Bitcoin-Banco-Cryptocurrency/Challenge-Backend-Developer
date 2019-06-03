@@ -53,9 +53,10 @@ Make a fork of this repository, and send us a pull-request.
 	- 2.2. Padrões:
 		- 2.2.1 Repository Pattern
 		- 2.2.2 Fluent API (Objects Model > Mapping)
-		- 2.2.3 Cash e Compressão
-		- 2.3. Documentação com Swagger
+		- 2.2.3 Cache e Compressão .Net Core
+		- 2.3.4 Documentação com Swagger
 
 - 3 Resumo da implementação
 	- 3.1 Mecanismo de leitura do arquivo book.json e armazenamento no banco
 	- 3.2 Controllers para Products e Specifications
+	- 3.3 Testes Unitários via Postman (file = testes.postman_collection.json)
