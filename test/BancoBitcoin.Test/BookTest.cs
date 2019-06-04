@@ -5,7 +5,7 @@ using BancoBitcoin.Repository.Entity;
 using NUnit.Framework;
 using System.Linq;
 
-namespace Tests
+namespace BancoBitcoin.Test
 {
     public class BookTest
     {

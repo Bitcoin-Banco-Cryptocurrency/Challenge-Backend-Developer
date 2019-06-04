@@ -29,10 +29,9 @@ namespace BancoBitcoin.Api.Configuration
             foreach (var assemblyName in Assembly.GetExecutingAssembly().GetReferencedAssemblies())
             {
                 Assembly assembly = Assembly.Load(assemblyName);
+
                 if (assembly.FullName.Contains("BancoBitcoin.Repository") || assembly.FullName.Contains("BancoBitcoin.Application"))
-                {
                     types.AddRange(assembly.GetExportedTypes());
-                }
             }
 
             var repositoriesRegistrations =
