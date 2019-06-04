@@ -1,4 +1,4 @@
-﻿using BancoBitcoin.Repository.Util;
+﻿using BancoBitcoin.Application.Util;
 using Microsoft.AspNetCore.Builder;
 using SimpleInjector;
 using System;

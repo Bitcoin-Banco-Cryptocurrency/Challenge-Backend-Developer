@@ -18,3 +18,5 @@
 /bin/Debug
 /obj/Debug
 /obj/Docker
+/test/BancoBitcoin.IntegrationTest/bin/Debug/netcoreapp2.2
+/test/BancoBitcoin.IntegrationTest/obj
