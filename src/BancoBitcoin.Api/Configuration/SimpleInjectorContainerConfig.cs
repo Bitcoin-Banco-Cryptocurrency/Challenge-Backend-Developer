@@ -1,4 +1,5 @@
 ﻿using BancoBitcoin.Application.Util;
+using BancoBitcoin.Repository.Util;
 using Microsoft.AspNetCore.Builder;
 using SimpleInjector;
 using System;
@@ -23,7 +24,7 @@ namespace BancoBitcoin.Api.Configuration
         public static void RegisterTypes(this Container container)
         {
             // Register all Interfaces of Repositories && Services
-            var repositoryAssembly = typeof(PredicateBuilder).Assembly;
+            var repositoryAssembly = typeof(ReadJson).Assembly;
             List<Type> types = new List<Type>();
 
             foreach (var assemblyName in Assembly.GetExecutingAssembly().GetReferencedAssemblies())
