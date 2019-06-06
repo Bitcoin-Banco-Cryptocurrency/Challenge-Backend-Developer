@@ -21,23 +21,42 @@ namespace BancoBitcoin.IntegrationTest
             _client = server.CreateClient();
         }
 
-        //[SetUp]
-        //public void Setup()
-        //{
-        //}
+        [Theory]
+        [TestCase("GET")]
+        public async Task TesteGetBooks(string method)
+        {
+            // Arrange
+            var request = new HttpRequestMessage(new HttpMethod(method), "api/book/GetBooks");
 
-        //[Test]
-        //public void Test1()
-        //{
-        //    Assert.Pass();
-        //}
+            // Act
+            var response = await _client.SendAsync(request);
+
+            // Assert
+            response.EnsureSuccessStatusCode();
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        }
 
         [Theory]
         [TestCase("GET")]
-        public async Task TesteGet(string method)
+        public async Task TesteGetBooksByInformation(string method)
         {
             // Arrange
-            var request = new HttpRequestMessage(new HttpMethod(method), "");
+            var request = new HttpRequestMessage(new HttpMethod(method), "api/Book/GetBooksByInformation?id=1&price=0&order=true");
+
+            // Act
+            var response = await _client.SendAsync(request);
+
+            // Assert
+            response.EnsureSuccessStatusCode();
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        }
+
+        [Theory]
+        [TestCase("GET")]
+        public async Task TesteGetBooksBySpecification(string method)
+        {
+            // Arrange
+            var request = new HttpRequestMessage(new HttpMethod(method), "api/Book/GetBooksBySpecification?originallyPublished=November&pageCount=0&order=true");
 
             // Act
             var response = await _client.SendAsync(request);
