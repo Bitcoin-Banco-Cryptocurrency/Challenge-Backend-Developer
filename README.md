@@ -12,7 +12,7 @@ https://booksapibitcoinbanco.azurewebsites.net/api
 ### How to run unit tests
 - `dotnet test` in `BooksApi.Tests` folder
 
-### How to use graphql playgound
+### How to use graphql playground
 
 #### Basic query:
 ``` 
