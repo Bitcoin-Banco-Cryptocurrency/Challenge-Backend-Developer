@@ -1,0 +1,14 @@
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\bin\Debug\netcoreapp2.1\bitcoin-project.deps.json
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\bin\Debug\netcoreapp2.1\bitcoin-project.runtimeconfig.json
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\bin\Debug\netcoreapp2.1\bitcoin-project.runtimeconfig.dev.json
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\bin\Debug\netcoreapp2.1\bitcoin-project.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.csprojAssemblyReference.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.csproj.CoreCompileInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.RazorAssemblyInfo.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.RazorAssemblyInfo.cs
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.AssemblyInfoInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.AssemblyInfo.cs
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.RazorTargetAssemblyInfo.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\bin\Debug\netcoreapp2.1\bitcoin-project.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project\obj\Debug\netcoreapp2.1\bitcoin-project.pdb
