@@ -1,0 +1,16 @@
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\bitcoin-project.Data.deps.json
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\bitcoin-project.Data.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\bitcoin-project.Data.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.csprojAssemblyReference.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.csproj.CoreCompileInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.AssemblyInfoInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.AssemblyInfo.cs
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\bitcoin-project.Model.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\bitcoin-project.Model.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.xml
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Data\obj\Debug\netstandard2.0\bitcoin-project.Data.csproj.CopyComplete

@@ -3,18 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitcoin-project.Api", "bitcoin-project\bitcoin-project.Api.csproj", "{E1F0E70F-FAB1-4838-A334-8BA723799243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bitcoin-project.Api", "bitcoin-project\bitcoin-project.Api.csproj", "{E1F0E70F-FAB1-4838-A334-8BA723799243}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitcoin-project.Service", "bitcoin-project.Service\bitcoin-project.Service.csproj", "{B77875BC-B3D6-4E57-82E0-F79C9BF69948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bitcoin-project.Service", "bitcoin-project.Service\bitcoin-project.Service.csproj", "{B77875BC-B3D6-4E57-82E0-F79C9BF69948}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Json", "Json", "{5C7F4218-7184-4606-B86A-1625DBD9A150}"
-	ProjectSection(SolutionItems) = preProject
-		books.json = books.json
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bitcoin-project.Model", "bitcoin-project.Model\bitcoin-project.Model.csproj", "{C17A7D23-A07D-43B6-ADB6-F7499C947C1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitcoin-project.Model", "bitcoin-project.Model\bitcoin-project.Model.csproj", "{C17A7D23-A07D-43B6-ADB6-F7499C947C1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bitcoin-project.Data", "bitcoin-project.Data\bitcoin-project.Data.csproj", "{4C6D87BF-E464-41D8-A84E-E3B03AB008FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitcoin-project.Data", "bitcoin-project.Data\bitcoin-project.Data.csproj", "{4C6D87BF-E464-41D8-A84E-E3B03AB008FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitcoin-project.Tests", "bitcoin-project.Tests\bitcoin-project.Tests.csproj", "{F7219A25-B25C-4E02-A1F9-930A02C10819}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +35,10 @@ Global
 		{4C6D87BF-E464-41D8-A84E-E3B03AB008FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C6D87BF-E464-41D8-A84E-E3B03AB008FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C6D87BF-E464-41D8-A84E-E3B03AB008FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7219A25-B25C-4E02-A1F9-930A02C10819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7219A25-B25C-4E02-A1F9-930A02C10819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7219A25-B25C-4E02-A1F9-930A02C10819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7219A25-B25C-4E02-A1F9-930A02C10819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

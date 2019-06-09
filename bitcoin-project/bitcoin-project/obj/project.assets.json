@@ -4394,6 +4394,9 @@
       "bitcoin-project.Data/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "bitcoin-project.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/bitcoin-project.Data.dll": {}
         },
@@ -4415,6 +4418,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "bitcoin-project.Data": "1.0.0",
           "bitcoin-project.Model": "1.0.0"
         },
         "compile": {

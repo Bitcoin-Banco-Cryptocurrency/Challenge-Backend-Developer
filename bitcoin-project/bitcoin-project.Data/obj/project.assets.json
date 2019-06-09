@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "bitcoin-project.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/bitcoin-project.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/bitcoin-project.Model.dll": {}
+        }
       }
     }
   },
@@ -171,11 +181,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "bitcoin-project.Model/1.0.0": {
+      "type": "project",
+      "path": "../bitcoin-project.Model/bitcoin-project.Model.csproj",
+      "msbuildProject": "../bitcoin-project.Model/bitcoin-project.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "bitcoin-project.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -207,7 +223,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\159\\Documents\\Bitcoin\\Challenge-Backend-Developer\\bitcoin-project\\bitcoin-project.Model\\bitcoin-project.Model.csproj": {
+              "projectPath": "C:\\Users\\159\\Documents\\Bitcoin\\Challenge-Backend-Developer\\bitcoin-project\\bitcoin-project.Model\\bitcoin-project.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

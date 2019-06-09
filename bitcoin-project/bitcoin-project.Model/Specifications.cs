@@ -4,7 +4,6 @@ namespace bitcoin_project.Model
 {
     public class Specifications
     {
-        public int ID { get; set; }
         public string DateOfPublish { get; set; }
         public string Author { get; set; }
         public int PageCount { get; set; }
