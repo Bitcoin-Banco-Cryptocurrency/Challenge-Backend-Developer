@@ -1,0 +1,16 @@
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Service.deps.json
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Service.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Service.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Data.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Model.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Data.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\bitcoin-project.Model.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.csprojAssemblyReference.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.csproj.CoreCompileInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.AssemblyInfoInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.AssemblyInfo.cs
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.csproj.CopyComplete
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Service\obj\Debug\netstandard2.0\bitcoin-project.Service.pdb

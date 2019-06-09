@@ -1,0 +1,9 @@
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\bin\Debug\netstandard2.0\bitcoin-project.Model.deps.json
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\bin\Debug\netstandard2.0\bitcoin-project.Model.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\bin\Debug\netstandard2.0\bitcoin-project.Model.pdb
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\obj\Debug\netstandard2.0\bitcoin-project.Model.csprojAssemblyReference.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\obj\Debug\netstandard2.0\bitcoin-project.Model.csproj.CoreCompileInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\obj\Debug\netstandard2.0\bitcoin-project.Model.AssemblyInfoInputs.cache
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\obj\Debug\netstandard2.0\bitcoin-project.Model.AssemblyInfo.cs
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\obj\Debug\netstandard2.0\bitcoin-project.Model.dll
+C:\Users\159\Documents\Bitcoin\Challenge-Backend-Developer\bitcoin-project\bitcoin-project.Model\obj\Debug\netstandard2.0\bitcoin-project.Model.pdb
