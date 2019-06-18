@@ -23,7 +23,7 @@ namespace Products.Controllers
         // POST api/products/search
         [Route("v1/products/search")]
         [ResponseCache(Duration = 120)]
-        public IEnumerable<Product> Get([FromBody]UrlQuery urlQuery)
+        public IActionResult Get([FromBody]UrlQuery urlQuery)
         {
             return _repository.Get(urlQuery);
         }
@@ -42,7 +42,7 @@ namespace Products.Controllers
         // GET api/products
         [Route("v1/products/{typeOrder}")]
         [ResponseCache(Duration = 120)]
-        public IEnumerable<Product> Get(string typeOrder)
+        public IActionResult Get(string typeOrder)
         {
             return _repository.Get(typeOrder);
         }
@@ -50,7 +50,7 @@ namespace Products.Controllers
         [Route("v1/product/{id}")]
         [ResponseCache(Duration = 120)]
         [HttpGet]
-        public Product Get(int id)
+        public IActionResult Get(int id)
         {
             // Find() ainda não suporta AsNoTracking
             return _repository.Get(id);

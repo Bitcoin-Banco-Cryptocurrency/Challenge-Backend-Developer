@@ -12,3 +12,6 @@ c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\o
 c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.AssemblyInfo.cs
 c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.dll
 c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.pdb
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\Products.dll
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\Products.pdb
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.csproj.CopyComplete

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Products.csproj"
+                "${workspaceFolder}/Products/Products.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Products.csproj"
+                "${workspaceFolder}/Products/Products.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,17 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Products.csproj"
+                "${workspaceFolder}/Products/Products.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Xunit Tests",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/ProductsTests/ProductsTests.csproj"
             ],
             "problemMatcher": "$tsc"
         }

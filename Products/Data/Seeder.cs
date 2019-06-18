@@ -13,7 +13,7 @@ public static class Seeder
 
     public static void Seedit(IServiceProvider serviceProvider)
     {
-        var json = System.IO.File.ReadAllText(@"books.json");
+        var json = System.IO.File.ReadAllText(@"Products\books.json");
         var prods = JsonConvert.DeserializeObject<List<RootObject>>(json);
         List<Product> productsLst = new List<Product>();
 

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b651014952372ee201354880b96b03785c1cdbbd"
+    "signature": "d2ee209e1d284bbe8aae624e247091f776722c98"
   },
   "compilationOptions": {
     "defines": [
@@ -32,8 +32,6 @@
           "Microsoft.EntityFrameworkCore": "2.2.4",
           "Microsoft.NETCore.App": "2.2.0",
           "Newtonsoft.Json": "12.0.2",
-          "Selenium.Support": "3.141.0",
-          "Selenium.WebDriver": "3.141.0",
           "Swashbuckle.AspNetCore": "4.0.1"
         },
         "runtime": {
@@ -111,34 +109,6 @@
         },
         "compile": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
-        }
-      },
-      "Selenium.Support/3.141.0": {
-        "dependencies": {
-          "Selenium.WebDriver": "3.141.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {
-            "assemblyVersion": "3.141.0.0",
-            "fileVersion": "3.141.0.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/3.141.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.2"
-        },
-        "runtime": {
-          "lib/netstandard2.0/WebDriver.dll": {
-            "assemblyVersion": "3.141.0.0",
-            "fileVersion": "3.141.0.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/4.0.1": {
@@ -3392,20 +3362,6 @@
       "sha512": "sha512-fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
-    },
-    "Selenium.Support/3.141.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
-      "path": "selenium.support/3.141.0",
-      "hashPath": "selenium.support.3.141.0.nupkg.sha512"
-    },
-    "Selenium.WebDriver/3.141.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
-      "path": "selenium.webdriver/3.141.0",
-      "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/4.0.1": {
       "type": "package",

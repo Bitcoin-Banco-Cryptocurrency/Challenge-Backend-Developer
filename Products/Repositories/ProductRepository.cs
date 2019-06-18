@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Products.Data;
 using Products.Models;
@@ -16,15 +17,36 @@ namespace Products.Repositories
             _context = context;
         }
 
-        public IEnumerable<Product> Get()
+        public ActionResult Get()
         {
-            return _context.Products.Include(spec => spec.Specification).AsNoTracking()
-               .AsNoTracking()
-               .ToList();
+            try
+            {
+
+                var products = (_context.Products.Include(spec => spec.Specification).AsNoTracking()
+                   .AsNoTracking()
+                   .ToList());
+
+                return new OkObjectResult(products);
+
+            }
+            catch (Exception er)
+            {
+                var result = new BadRequestObjectResult(new { message = er.InnerException.ToString(), currentDate = DateTime.Now });
+                return result;
+            }
         }
-        public Product Get(int id)
+        public IActionResult Get(int id)
         {
-            return _context.Products.Include(spec => spec.Specification).AsNoTracking().Where(x => x.ID == id).FirstOrDefault();
+            try
+            {
+                var product = _context.Products.Include(spec => spec.Specification).AsNoTracking().Where(x => x.ID == id).FirstOrDefault();
+                return new OkObjectResult(_context.Products.Include(spec => spec.Specification).AsNoTracking().Where(x => x.ID == id).FirstOrDefault());
+            }
+            catch (Exception erro)
+            {
+                var result = new BadRequestObjectResult(new { message = erro.InnerException.ToString(), currentDate = DateTime.Now });
+                return result;
+            }
         }
         public void Save(Product product)
         {
@@ -43,7 +65,7 @@ namespace Products.Repositories
             _context.Products.Remove(product);
         }
 
-        public IEnumerable<Product> Get(UrlQuery urlQuery)
+        public IActionResult Get(UrlQuery urlQuery)
         {
             IEnumerable<Product> listQuery = _context.Products.Include(spec => spec.Specification);
 
@@ -72,17 +94,17 @@ namespace Products.Repositories
             else if (urlQuery.SortPriceType == "desc")
                 listQuery = listQuery.OrderByDescending(x => x.Price);
 
-            return listQuery;
+            return new OkObjectResult(listQuery);
         }
 
-        public IEnumerable<Product> Get(string typeSort)
+        public IActionResult Get(string typeSort)
         {
             if (typeSort == "asc")
-                return _context.Products.OrderBy(x => x.Price);
-            else if(typeSort == "desc")
-                return _context.Products.OrderByDescending(x => x.Price);
+                return new OkObjectResult(_context.Products.OrderBy(x => x.Price));
+            else if (typeSort == "desc")
+                return new OkObjectResult(_context.Products.OrderByDescending(x => x.Price));
 
-            return _context.Products.AsNoTracking();
+            return new OkObjectResult(_context.Products.AsNoTracking());
         }
     }
 }

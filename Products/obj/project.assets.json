@@ -2974,30 +2974,6 @@
           }
         }
       },
-      "Selenium.Support/3.141.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "3.141.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/3.141.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/WebDriver.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/WebDriver.dll": {}
-        }
-      },
       "Swashbuckle.AspNetCore/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -7752,44 +7728,6 @@
         "version.txt"
       ]
     },
-    "Selenium.Support/3.141.0": {
-      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
-      "type": "package",
-      "path": "selenium.support/3.141.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/WebDriver.Support.dll",
-        "lib/net35/WebDriver.Support.xml",
-        "lib/net40/WebDriver.Support.dll",
-        "lib/net40/WebDriver.Support.xml",
-        "lib/net45/WebDriver.Support.dll",
-        "lib/net45/WebDriver.Support.xml",
-        "lib/netstandard2.0/WebDriver.Support.dll",
-        "lib/netstandard2.0/WebDriver.Support.xml",
-        "selenium.support.3.141.0.nupkg.sha512",
-        "selenium.support.nuspec"
-      ]
-    },
-    "Selenium.WebDriver/3.141.0": {
-      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
-      "type": "package",
-      "path": "selenium.webdriver/3.141.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/WebDriver.dll",
-        "lib/net35/WebDriver.xml",
-        "lib/net40/WebDriver.dll",
-        "lib/net40/WebDriver.xml",
-        "lib/net45/WebDriver.dll",
-        "lib/net45/WebDriver.xml",
-        "lib/netstandard2.0/WebDriver.dll",
-        "lib/netstandard2.0/WebDriver.xml",
-        "selenium.webdriver.3.141.0.nupkg.sha512",
-        "selenium.webdriver.nuspec"
-      ]
-    },
     "Swashbuckle.AspNetCore/4.0.1": {
       "sha512": "Zq6lkFieuFPNDwXwQ+e8i5zy2VMrexcRFU8mQORxqIc8r7Y+qKX63vg57yL1HeGCINHQGGzxGfw2rP63IeEqhg==",
       "type": "package",
@@ -12247,8 +12185,6 @@
       "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.NETCore.App >= 2.2.0",
       "Newtonsoft.Json >= 12.0.2",
-      "Selenium.Support >= 3.141.0",
-      "Selenium.WebDriver >= 3.141.0",
       "Swashbuckle.AspNetCore >= 4.0.1"
     ]
   },
@@ -12332,14 +12268,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.2, )"
-          },
-          "Selenium.Support": {
-            "target": "Package",
-            "version": "[3.141.0, )"
-          },
-          "Selenium.WebDriver": {
-            "target": "Package",
-            "version": "[3.141.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
