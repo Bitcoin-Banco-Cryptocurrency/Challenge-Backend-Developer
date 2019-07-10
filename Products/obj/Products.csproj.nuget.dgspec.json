@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj": {}
+    "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj": {
+    "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj",
+        "projectUniqueName": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj",
         "projectName": "Products",
-        "projectPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj",
+        "projectPath": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj",
         "packagesPath": "C:\\Users\\BOMBA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\obj\\",
+        "outputPath": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

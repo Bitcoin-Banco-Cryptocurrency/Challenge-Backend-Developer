@@ -13767,11 +13767,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\ProductsTests.Test\\ProductsTests.Test.csproj",
+      "projectUniqueName": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\ProductsTests.Test\\ProductsTests.Test.csproj",
       "projectName": "ProductsTests.Test",
-      "projectPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\ProductsTests.Test\\ProductsTests.Test.csproj",
+      "projectPath": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\ProductsTests.Test\\ProductsTests.Test.csproj",
       "packagesPath": "C:\\Users\\BOMBA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\ProductsTests.Test\\obj\\",
+      "outputPath": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\ProductsTests.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -13792,8 +13792,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj": {
-              "projectPath": "C:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj"
+            "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj": {
+              "projectPath": "c:\\Users\\BOMBA\\Documents\\GitHub\\Challenge-Backend-Developer\\Products\\Products.csproj"
             }
           }
         }

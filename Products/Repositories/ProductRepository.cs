@@ -48,10 +48,18 @@ namespace Products.Repositories
                 return result;
             }
         }
-        public void Save(Product product)
+        public IActionResult Save(Product product)
         {
-            _context.Products.Add(product);
-            _context.SaveChanges();
+            try
+            {
+                _context.Products.Add(product);
+                return new OkObjectResult(_context.SaveChanges());
+            }
+            catch (Exception erro)
+            {
+                var result = new BadRequestObjectResult(new { message = erro.InnerException.ToString(), currentDate = DateTime.Now });
+                return result;
+            }
         }
         public void Update(Product product)
         {
