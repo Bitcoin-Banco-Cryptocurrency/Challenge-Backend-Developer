@@ -4,9 +4,10 @@
         "name": "Journey to the Center of the Earth",
         "price": 10.00,
         "specifications": {
-            "Originally published":"November 25, 1864",
+		 "id": 1,
+            "Published":"November 25, 1864",
             "Author":"Jules Verne",
-            "Page count": 183,
+            "Pagecount": 183,
             "Illustrator": "Édouard Riou",
             "Genres": [
               "Science Fiction", 
@@ -19,9 +20,10 @@
         "name": "20,000 Leagues Under the Sea",
         "price": 10.10,
         "specifications": {
-            "Originally published":"June 20, 1870",
+		"id": 2,
+            "Published":"June 20, 1870",
             "Author":"Jules Verne",
-            "Page count": 213,
+            "Pagecount": 213,
             "Illustrator": [
                "Édouard Riou", 
                "Alphonse-Marie-Adolphe de Neuville"
@@ -34,9 +36,10 @@
         "name": "Harry Potter and the Goblet of Fire",
         "price": 7.31,
         "specifications": {
-            "Originally published":"July 8, 2000",
+		"id": 3,
+            "Published":"July 8, 2000",
             "Author":"J. K. Rowling",
-            "Page count": 636,
+            "Pagecount": 636,
             "Illustrator": [
                "Cliff Wright", 
                "Mary GrandPré"
@@ -56,9 +59,10 @@
         "name": "Fantastic Beasts and Where to Find Them: The Original Screenplay",
         "price": 11.15,
         "specifications": {
-            "Originally published":"November 18, 2016",
+		"id": 4,
+            "Published":"November 18, 2016",
             "Author":"J. K. Rowling",
-            "Page count": 457,
+            "Pagecount": 457,
             "Illustrator": "Cliff Wright",
              "Genres": [
               "Fantasy Fiction",
@@ -72,14 +76,15 @@
         "name": "The Lord of the Rings",
         "price": 6.15,
         "specifications": {
-            "Originally published":"July 29, 1954",
+		"id": 5,
+            "Published":"July 29, 1954",
             "Author":"J. R. R. Tolkien",
-            "Page count": 715,
+            "Pagecount": 715,
             "Illustrator": [
               "Alan Lee",
               "Ted Nashmith",
               "J. R. R. Tolkien"
-             ]
+             ],
              "Genres": [
               "Fantasy Fiction",
               "Adventure Fiction"

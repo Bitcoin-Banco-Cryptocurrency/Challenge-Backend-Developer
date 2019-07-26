@@ -1,0 +1,17 @@
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\ProductsTests.Test.deps.json
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\ProductsTests.Test.runtimeconfig.json
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\ProductsTests.Test.runtimeconfig.dev.json
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\ProductsTests.Test.dll
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\ProductsTests.Test.pdb
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.csprojAssemblyReference.cache
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.csproj.CoreCompileInputs.cache
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.AssemblyInfoInputs.cache
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.AssemblyInfo.cs
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.dll
+c:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.pdb
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\Products.dll
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\bin\Debug\netcoreapp2.2\Products.pdb
+C:\Users\BOMBA\Documents\GitHub\Challenge-Backend-Developer\ProductsTests.Test\obj\Debug\netcoreapp2.2\ProductsTests.Test.csproj.CopyComplete

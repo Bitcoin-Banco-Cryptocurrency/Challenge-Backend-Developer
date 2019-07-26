@@ -1,0 +1,4 @@
+{
+    "dotnet-test-explorer.autoExpandTree": true,
+    "dotnet-test-explorer.autoWatch": true
+}
